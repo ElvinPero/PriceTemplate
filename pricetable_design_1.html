@@ -19,23 +19,29 @@
   
   
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   
 <style>
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
-
+html, body {
+  margin:0;
+  height:100%;
+}
 body {
     min-height: 100vh;
-    background: url("https://images.unsplash.com/photo-1598125443421-779f98323fe4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+    background: url("https://images.pexels.com/photos/3721941/pexels-photo-3721941.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
     font-family: Roboto;
     font-size: 16px;
 }
+
 
 .container {
     max-width: 1320px;
@@ -53,9 +59,11 @@ body {
 
 .card {
     padding: 50px;
-    background: rgba(255, 255, 255, 0.1);
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
+    /* background: rgba(255, 255, 255, 0.1); */
+    /* background: linear-gradient(rgb(0, 0, 0),rgb(10, 10, 10),rgb(30, 30, 30),rgb(60, 60, 60),rgb(90, 90, 90)); */
+    background: linear-gradient(123deg, rgb(90, 90, 90),rgb(60, 60, 60),rgb(30, 30, 30),rgb(10, 10, 10),rgb(0, 0, 0));
+    /* border: 0px solid rgba(255, 255, 255, 0.2); */
+    /* backdrop-filter: blur(5px); */
     border-radius: 25px;
 }
 
@@ -85,39 +93,43 @@ hr {
 
 .features li {
     padding-bottom: 10px;
+    list-style: none;
 }
 
 a.cta_btn {
     width: 100%;
     display: inline-block;
     text-align: center;
-    background: rgba(21, 23, 24, 0.7);
-    border-radius: 29px;
+    background: rgba(52, 52, 52, 0.42);
+    border-radius: 15px;
     padding: 20px 0;
     color: white;
     text-decoration: none;
     letter-spacing: 2px;
     transition: background .3s ease;
+    transition: all .2s ease-in-out;
+    backdrop-filter: blur(40px);
 }
 
 a.cta_btn:hover {
-    background: #000;
+    background: rgb(90, 90, 90, 0.42);
+    transform: scale(1.1);
+    backdrop-filter: blur(40px);
 }
 .link {
     position: fixed;
     background-color: #D12322;
     padding: 23px 40px;
-    right: -99px;
-    border-radius: 5px;
+    right: -110px;
+    border-radius: 10px;
     top: 50%;
-    transform: translateY(-50%);
-    transform: rotate(-90deg);
+    transform: rotate(270deg);
     font-size: 18px;
     font-weight: 500;
     color: #FFF;
     text-decoration: none;
     text-transform: capitalize;
-    transition: all .1s ease-in-out;
+    transition: all .1s ease-in;
 }
 
 .link i {
@@ -125,8 +137,11 @@ a.cta_btn:hover {
 }
 
 .link:hover {
-    text-decoration: underline;
-    background-color: black;
+    position: fixed;
+    right: -110px;
+    top: 50%;
+    text-decoration: none;
+    background-color: #d11717;
 }
 @media only screen and (max-width: 1024px) {
     .grid {
@@ -172,6 +187,10 @@ a.cta_btn:hover {
         font-size: 11px;
     }
 }
+
+#buy1 {
+    margin: 29px 0px;
+}
 </style>
 
   <script>
@@ -190,47 +209,53 @@ a.cta_btn:hover {
 </head>
 
 <body translate="no" >
+    <div class="bg-container"></div>
   <div class="container">
         <div class="grid">
             <div class="card">
                 <h2 class="card_title">Student</h2>
-                <p class="pricing">20$<span class="small">/per month</span></p>
+                <p class="pricing">20$<span class="small">&nbsp;&nbsp;per month</span></p>
                 <p>Save $9</p>
                 <hr>
                 <ul class="features">
                     <li>One account</li>
                     <li>Unlimited songs</li>
                     <li>Customized playlist</li>
+                    <li>No Ads</li>
                 </ul>
-                <a href="#" class="cta_btn">Buy Now</a>
+                <a href="#" class="cta_btn" id="buy1">Buy Now</a>
             </div>
             <div class="card">
                 <h2 class="card_title">Personal</h2>
-                <p class="pricing">39$<span class="small">/per month</span></p>
+                <p class="pricing">39$<span class="small">&nbsp;&nbsp;per month</span></p>
                 <p>Save $15</p>
                 <hr>
                 <ul class="features">
                     <li>One account</li>
                     <li>Unlimited songs</li>
+                    <li>Unlimited offline downloads</li>
                     <li>Customized playlist</li>
+                    <li>No Ads</li>
                 </ul>
                  <a href="#" class="cta_btn">Buy Now</a>
             </div>
             <div class="card">
                 <h2 class="card_title">Family</h2>
-                <p class="pricing">60$<span class="small">/per month</span></p>
+                <p class="pricing">60$<span class="small">&nbsp;&nbsp;per month</span></p>
                 <p>Save $25</p>
                 <hr>
                 <ul class="features">
-                    <li>Six account</li>
+                    <li>Six accounts</li>
                     <li>Unlimited songs</li>
+                    <li>Unlimited offline downloads</li>
                     <li>Customized playlist</li>
+                    <li>No Ads</li>
                 </ul>
                  <a href="#" class="cta_btn">Buy Now</a>
             </div>
         </div>
     </div>
-<a href="https://youtu.be/RLReK22LWTo" target="_blank" class="link">Watch on youtube <i class="fab fa-youtube"></i></a>
+<a href="https://youtu.be/RLReK22LWTo" target="_blank" class="link" id="YTbtn">Watch on YouTube <i class="fab fa-youtube"></i></a>
   
   
   
