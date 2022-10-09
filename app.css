@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -93,6 +93,7 @@ video {
 }
 
 /* HTML5 display-role reset for older browsers */
+
 article,
 aside,
 details,
@@ -134,19 +135,29 @@ table {
     border-spacing: 0;
 }
 
-
 html {
     box-sizing: border-box;
     font-family: 'roboto', sans-serif;
+    scroll-behavior: smooth;
 }
 
-body {
-    background-color: #3f92f9;
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+}
 
+.container-bg1 {
+    background-color: #3f92f9;
+}
+
+.container-bg2 {
+    background-color: #B25068;
+}
+
+.container-bg3 {
+    background-color: #554994;
 }
 
 .pricing-img {
@@ -165,7 +176,6 @@ body {
     flex-direction: column;
     text-align: center;
     text-transform: uppercase;
-
 }
 
 .pricing-plan {
@@ -200,11 +210,27 @@ body {
     border-bottom: 2px solid #e1f1ff;
 }
 
+.pricing-features-item2 {
+  color: #E94560;
+}
+
+.pricing-features-item3 {
+  color: #554994;
+}
+
 .pricing-price {
     color: #016ff9;
     display: block;
     font-size: 32px;
     font-weight: 700;
+}
+
+.pricing-price2 {
+  color: #E94560;
+}
+
+.pricing-price3 {
+  color: #554994;
 }
 
 .pricing-button {
@@ -221,7 +247,6 @@ body {
 .pricing-button:hover,
 .pricing-button:focus {
     background-color: #e1f1ff;
-
 }
 
 .pricing-button.is-featured {
@@ -234,17 +259,67 @@ body {
     color: #054798;
 }
 
+.pricing-button2 {
+    border: 2px solid #E94560;
+    border-radius: 10px;
+    color: #E94560;
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    margin: 25px 0;
+    transform: background-color 200ms ease-in-out;
+}
+
+.pricing-button2:hover,
+.pricing-button2:focus {
+    background-color: #ffe1e1;
+}
+
+.pricing-button2.is-featured {
+    background-color: #E94560;
+    color: #e1f1ff;
+}
+
+.pricing-button2.is-featured:hover {
+    background-color: #ffe1e1;
+    color: #E94560;
+}
+
+.pricing-button3 {
+    border: 2px solid #554994;
+    border-radius: 10px;
+    color: #554994;
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    margin: 25px 0;
+    transform: background-color 200ms ease-in-out;
+}
+
+.pricing-button3:hover,
+.pricing-button3:focus {
+    background-color: #f7e1ff;
+}
+
+.pricing-button3.is-featured {
+    background-color: #554994;
+    color: #e1f1ff;
+}
+
+.pricing-button3.is-featured:hover {
+    background-color: #f7e1ff;
+    color: #554994;
+}
+
 @media(min-width: 900px) {
     .panel {
         flex-direction: row;
     }
-
     .pricing-plan {
         border-bottom: none;
         border-right: 2px solid #e1f1ff;
         padding: 25px 50px;
     }
-
     .pricing-plan:last-child {
         border-bottom: none;
         border-right: none;
