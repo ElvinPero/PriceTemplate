@@ -110,6 +110,7 @@ section {
 
 body {
     line-height: 1;
+    position: relative;
 }
 
 ol,
@@ -140,7 +141,20 @@ html {
     font-family: 'roboto', sans-serif;
     scroll-behavior: smooth;
 }
+.changeMode{
+    display: inline-block;
+    position: absolute;
+    top:15px;
+    left:15px;
+}
 
+.mode{
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 10%;
+    background-color: white;
+    
+}
 .container {
     display: flex;
     justify-content: center;
