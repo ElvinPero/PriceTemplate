@@ -10,6 +10,8 @@
 </head>
 
 <body>
+    <div class="loader"></div>
+
     <div class="changeMode">
         <button class="mode" ><img class="toggler" src="moon-and-stars-svgrepo-com.svg"> </button>
     </div>
@@ -118,11 +120,39 @@
         </div>
     </div><!-- /.container -->
 
+    <div class="footer-basic">
+        <footer>
+                        <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Home</a></li>
+                <li class="list-inline-item"><a href="#">Services</a></li>
+                <li class="list-inline-item"><a href="#">About</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">Price Template © 2022</p>
+        </footer>
+    </div>
+
     <a href="#" class="btn-to-top">
         <span>&#8593;</span>
     </a>
+
+  
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+        //Preloader
+        preloaderFadeOutTime = 1000;
+        function hidePreloader() {
+        var preloader = $('.loader');
+        preloader.fadeOut(preloaderFadeOutTime);
+        }
+        hidePreloader();
+        });
+        </script>
+
     <script>
         var mode=true;
         $(".mode").click(function(){
