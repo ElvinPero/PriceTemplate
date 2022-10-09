@@ -8,6 +8,9 @@
     <link href="app.css" rel="stylesheet">
 </head>
 <body>
+    <div class="changeMode">
+        <button class="mode" ><img class="toggler" src="moon-and-stars-svgrepo-com.svg"> </button>
+    </div>
     <div class="container container-bg1">
       <div class="panel pricing-table">
           <div class="pricing-plan">
@@ -110,5 +113,37 @@
           </div>
       </div>
     </div><!-- /.container -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        var mode=true;
+        $(".mode").click(function(){
+    if(mode===false)
+   { 
+    console.log(mode);
+    
+    $("h2").css({"color" :"#888"});
+    $(".toggler").attr("src", "moon-and-stars-svgrepo-com.svg");
+
+    
+    $(".container-bg1").css({"background-color" :"#3f92f9"});
+    $(".container-bg2").css({"background-color" :"#B25068"})
+    $(".container-bg3").css({"background-color" :"#554994"});
+    $(".mode").css({"background-color" :"white"})
+    mode=true;
+}
+    else{
+        console.log(mode);
+        
+        $("h2").css({"color" :"black"});
+        $(".toggler").attr("src", "icons8-sun-50.png");
+        $(".container").css({"background-color" :"black"})
+       $(".mode").css({"background-color" :"#FFFFCC"})
+       
+        mode=false;
+    }
+    
+
+})
+    </script>
 </body>
 </html>
