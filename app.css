@@ -146,6 +146,13 @@ html {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    padding: 30px 0;
+}
+
+
+
+.panel {
+    margin: 10px 20px;
 }
 
 .container-bg1 {
@@ -314,6 +321,7 @@ html {
 @media(min-width: 900px) {
     .panel {
         flex-direction: row;
+        margin: 0;
     }
     .pricing-plan {
         border-bottom: none;
@@ -324,4 +332,10 @@ html {
         border-bottom: none;
         border-right: none;
     }
+    .container{
+        padding:0;
+    }
+    
 }
+
+
