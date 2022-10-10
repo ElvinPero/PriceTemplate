@@ -5,7 +5,9 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Price Tiers</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
-    <link href="app.css" rel="stylesheet">
+
+    <link href="css/loader.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
@@ -56,7 +58,7 @@
                 </ul>
                 <div class="change-mode">
                   <button class="mode">
-                    <img class="toggler" src="moon-and-stars-svgrepo-com.svg" alt="Toggle Mode" />
+                    <img class="toggler" src="assets/moon-and-stars-svgrepo-com.svg" alt="Toggle Mode" />
                   </button>
                 </div>
                 <form class="d-flex" role="search">
@@ -72,7 +74,7 @@
     <div class="container container-bg1">
       <div class="panel pricing-table">
         <div class="pricing-plan">
-          <img alt="" class="pricing-img" src="icons/icon1.png" />
+          <img alt="" class="pricing-img" src="assets/icons/icon1.png" />
           <h2 class="pricing-header">Personal</h2>
           <ul class="pricing-features">
             <li class="pricing-features-item">Custom domains</li>
@@ -84,7 +86,7 @@
           <a class="pricing-button" href="#/">Sign up</a>
         </div>
         <div class="pricing-plan">
-          <img alt="" class="pricing-img" src="icons/icon2.png" />
+          <img alt="" class="pricing-img" src="assets/icons/icon2.png" />
           <h2 class="pricing-header">Small team</h2>
           <ul class="pricing-features">
             <li class="pricing-features-item">Never sleeps</li>
@@ -96,7 +98,7 @@
           <a class="pricing-button is-featured" href="#/">Free trial</a>
         </div>
         <div class="pricing-plan">
-          <img alt="" class="pricing-img" src="icons/icon3.png" />
+          <img alt="" class="pricing-img" src="assets/icons/icon3.png" />
           <h2 class="pricing-header">Enterprise</h2>
           <ul class="pricing-features">
             <li class="pricing-features-item">Dedicated</li>
@@ -111,7 +113,7 @@
     <div class="container container-bg2">
       <div class="panel">
         <div class="pricing-plan">
-          <img alt="" class="pricing-img" src="icons/icon1.png" />
+          <img alt="" class="pricing-img" src="assets/icons/icon1.png" />
           <h2 class="pricing-header">Personal</h2>
           <ul class="pricing-features">
             <li class="pricing-features-item pricing-features-item2">
@@ -125,7 +127,7 @@
           <a class="pricing-button pricing-button2" href="#/">Sign up</a>
         </div>
         <div class="pricing-plan">
-          <img alt="" class="pricing-img" src="icons/icon2.png" />
+          <img alt="" class="pricing-img" src="assets/icons/icon2.png" />
           <h2 class="pricing-header">Small team</h2>
           <ul class="pricing-features">
             <li class="pricing-features-item pricing-features-item2">
@@ -141,7 +143,7 @@
           >
         </div>
         <div class="pricing-plan">
-          <img alt="" class="pricing-img" src="icons/icon3.png" />
+          <img alt="" class="pricing-img" src="assets/icons/icon3.png" />
           <h2 class="pricing-header">Enterprise</h2>
           <ul class="pricing-features">
             <li class="pricing-features-item pricing-features-item2">
@@ -160,7 +162,7 @@
     <div class="container container-bg3">
       <div class="panel">
         <div class="pricing-plan">
-          <img alt="" class="pricing-img" src="icons/icon1.png" />
+          <img alt="" class="pricing-img" src="assets/icons/icon1.png" />
           <h2 class="pricing-header">Personal</h2>
           <ul class="pricing-features">
             <li class="pricing-features-item pricing-features-item3">
@@ -174,7 +176,7 @@
           <a class="pricing-button pricing-button3" href="#/">Sign up</a>
         </div>
         <div class="pricing-plan">
-          <img alt="" class="pricing-img" src="icons/icon2.png" />
+          <img alt="" class="pricing-img" src="assets/icons/icon2.png" />
           <h2 class="pricing-header">Small team</h2>
           <ul class="pricing-features">
             <li class="pricing-features-item pricing-features-item3">
@@ -190,7 +192,7 @@
           >
         </div>
         <div class="pricing-plan">
-          <img alt="" class="pricing-img" src="icons/icon3.png" />
+          <img alt="" class="pricing-img" src="assets/icons/icon3.png" />
           <h2 class="pricing-header">Enterprise</h2>
           <ul class="pricing-features">
             <li class="pricing-features-item pricing-features-item3">
@@ -243,7 +245,7 @@
 
       const enableDarkMode = () => {
         $("h2").css({ color: "black" });
-        $(".toggler").attr("src", "icons8-sun-50.png");
+        $(".toggler").attr("src", "assets/icons8-sun-50.png");
         $(".container").css({ "background-color": "black" });
         $(".mode").css({ "background-color": "#FFFFCC" });
         localStorage.setItem("dark-mode", "enabled");
@@ -251,7 +253,7 @@
 
       const disableDarkMode = () => {
         $("h2").css({ color: "#888" });
-        $(".toggler").attr("src", "moon-and-stars-svgrepo-com.svg");
+        $(".toggler").attr("src", "assets/moon-and-stars-svgrepo-com.svg");
         $(".container-bg1").css({ "background-color": "#3f92f9" });
         $(".container-bg2").css({ "background-color": "#B25068" });
         $(".container-bg3").css({ "background-color": "#554994" });
