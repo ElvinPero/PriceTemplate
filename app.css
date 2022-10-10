@@ -689,3 +689,7 @@ html {
     bottom: 5px;
     position: relative;
 }
+
+#navbar{
+  margin-bottom: 9%;
+}
