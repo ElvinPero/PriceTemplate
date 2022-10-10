@@ -695,3 +695,11 @@ html {
 #navbar{
   margin-bottom: 9%;
 }
+
+.change-mode {
+  margin-right: 10px;
+}
+
+.toggler {
+  max-height: 46px;
+}
