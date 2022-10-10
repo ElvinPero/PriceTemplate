@@ -482,6 +482,7 @@ html {
     text-decoration: none;
     margin: 25px 0;
     transform: background-color 200ms ease-in-out;
+    box-shadow: 2px 2px 20px #62a3f2;
 }
 
 .pricing-button:hover,
@@ -508,6 +509,7 @@ html {
     text-decoration: none;
     margin: 25px 0;
     transform: background-color 200ms ease-in-out;
+    box-shadow: 2px 2px 20px #ff7b7b;
 }
 
 .pricing-button2:hover,
@@ -534,6 +536,7 @@ html {
     text-decoration: none;
     margin: 25px 0;
     transform: background-color 200ms ease-in-out;
+    box-shadow: 2px 2px 20px #9782f7;
 }
 
 .pricing-button3:hover,
