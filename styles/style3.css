@@ -1,0 +1,35 @@
+.container-bg {
+    background-color: #554994;
+}
+
+.style {
+  background-color: #bbc77c;
+}
+
+.pricing-features-item {
+  color: #554994;
+}
+
+.pricing-price {
+  color: #554994;
+}
+
+.pricing-button {
+    border: 2px solid #554994;
+    color: #554994;
+}
+
+.pricing-button:hover,
+.pricing-button:focus {
+    background-color: #f7e1ff;
+}
+
+.pricing-button.is-featured {
+    background-color: #554994;
+    color: #e1f1ff;
+}
+
+.pricing-button.is-featured:hover {
+    background-color: #f7e1ff;
+    color: #554994;
+}
