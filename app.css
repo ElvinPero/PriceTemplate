@@ -366,6 +366,15 @@ html {
     scroll-behavior: smooth;
 }
 
+.changeMode {
+  margin-right: 5px;
+}
+
+.toggler {
+  height: 45px;
+  width: 45px;
+}
+
 .mode{
     cursor: pointer;
     z-index: 2;
