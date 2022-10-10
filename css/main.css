@@ -70,7 +70,7 @@ table {
     z-index: 2;
     border-radius: 10%;
     background-color: white;
-    
+
 }
 .container {
     display: flex;
@@ -123,15 +123,6 @@ table {
     color: #016ff9;
 }
 
-.pricing-features-item {
-    font-weight: 600;
-    letter-spacing: 1px;
-    font-size: 12px;
-    line-height: 1.5;
-    padding: 15px 0;
-    border-top: 2px solid #e1f1ff;
-}
-
 .pricing-features-item:last-child {
     border-bottom: 2px solid #e1f1ff;
 }
@@ -143,21 +134,9 @@ table {
 }
 
 .pricing-button {
-<<<<<<< HEAD:app.css
   display: inline-block;
   text-decoration: none;
   transform: background-color 200ms ease-in-out;
-=======
-    border: 2px solid #9dd1ff;
-    border-radius: 10px;
-    color: #016ff9;
-    display: inline-block;
-    padding: 15px 30px;
-    text-decoration: none;
-    margin: 25px 0;
-    transform: background-color 200ms ease-in-out;
-    box-shadow: 2px 2px 20px #62a3f2;
->>>>>>> 11e0db0f6353659663741e7b4446a43a7d9dcbb4:css/main.css
 }
 
 .pricing-button, .style {
@@ -175,71 +154,11 @@ table {
   font-size: 16px;
 }
 
-<<<<<<< HEAD:app.css
 .style:hover {
   transform: scale(1.1);
   cursor: pointer;
   box-shadow: #000 0 0 10px;
   text-shadow: #fff 0 0 50px;
-=======
-.pricing-button.is-featured:hover {
-    background-color: #e1f1ff;
-    color: #054798;
-}
-
-.pricing-button2 {
-    border: 2px solid #E94560;
-    border-radius: 10px;
-    color: #E94560;
-    display: inline-block;
-    padding: 15px 30px;
-    text-decoration: none;
-    margin: 25px 0;
-    transform: background-color 200ms ease-in-out;
-    box-shadow: 2px 2px 20px #ff7b7b;
-}
-
-.pricing-button2:hover,
-.pricing-button2:focus {
-    background-color: #ffe1e1;
-}
-
-.pricing-button2.is-featured {
-    background-color: #E94560;
-    color: #e1f1ff;
-}
-
-.pricing-button2.is-featured:hover {
-    background-color: #ffe1e1;
-    color: #E94560;
-}
-
-.pricing-button3 {
-    border: 2px solid #554994;
-    border-radius: 10px;
-    color: #554994;
-    display: inline-block;
-    padding: 15px 30px;
-    text-decoration: none;
-    margin: 25px 0;
-    transform: background-color 200ms ease-in-out;
-    box-shadow: 2px 2px 20px #9782f7;
-}
-
-.pricing-button3:hover,
-.pricing-button3:focus {
-    background-color: #f7e1ff;
-}
-
-.pricing-button3.is-featured {
-    background-color: #554994;
-    color: #e1f1ff;
-}
-
-.pricing-button3.is-featured:hover {
-    background-color: #f7e1ff;
-    color: #554994;
->>>>>>> 11e0db0f6353659663741e7b4446a43a7d9dcbb4:css/main.css
 }
 
 @media(min-width: 900px) {
@@ -259,11 +178,11 @@ table {
     .container{
         padding:0;
     }
-    
+
 }
 
 .footer-basic {
-    padding:40px 0;
+    padding: 40px 0;
     background-color:#ffffff;
     color:#4b4c4d;
     display: flex;
@@ -273,7 +192,7 @@ table {
   }
 
   .footer-basic ul {
-    padding:0;
+    padding: auto;
     list-style:none;
     text-align:center;
     font-size:18px;
@@ -326,8 +245,10 @@ table {
     color:#aaa;
     margin-bottom:0;
   }
+
+  
 @media (max-width: 768px) {
-    .menu { 
+    .menu {
      display:none;
      position: absolute;
      background-color:#e1f1ff;
@@ -376,6 +297,7 @@ table {
   color: white;
   font-size: 30px;
 }
+
 .btn-to-top span {
     bottom: 5px;
     position: relative;
