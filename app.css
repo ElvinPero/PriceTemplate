@@ -523,6 +523,7 @@ html {
 .pricing-button2:hover,
 .pricing-button2:focus {
     background-color: #ffe1e1;
+    color: #E94560;
 }
 
 .pricing-button2.is-featured {
@@ -550,6 +551,7 @@ html {
 .pricing-button3:hover,
 .pricing-button3:focus {
     background-color: #f7e1ff;
+    color: #554994;
 }
 
 .pricing-button3.is-featured {
