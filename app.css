@@ -147,17 +147,6 @@ html {
     min-height: 100vh;
 }
 
-.container-bg1 {
-    background-color: #3f92f9;
-}
-
-.container-bg2 {
-    background-color: #B25068;
-}
-
-.container-bg3 {
-    background-color: #554994;
-}
 
 .pricing-img {
     margin-bottom: 25px;
@@ -177,9 +166,6 @@ html {
     text-transform: uppercase;
 }
 
-.pricing-plan {
-    border-bottom: solid 1px #e1f1ff;
-}
 
 .pricing-plan:last-child {
     border-bottom: none;
@@ -197,16 +183,11 @@ html {
 }
 
 .pricing-features-item {
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: 1px;
-    font-size: 12px;
+    font-size: 1em;
     line-height: 1.5;
     padding: 15px 0;
-    border-top: 2px solid #e1f1ff;
-}
-
-.pricing-features-item:last-child {
-    border-bottom: 2px solid #e1f1ff;
 }
 
 .pricing-features-item2 {
@@ -235,43 +216,20 @@ html {
 .pricing-button {
     border: 2px solid #9dd1ff;
     border-radius: 10px;
-    color: #016ff9;
     display: inline-block;
     padding: 15px 30px;
     text-decoration: none;
     margin: 25px 0;
     transform: background-color 200ms ease-in-out;
-}
-
-.pricing-button:hover,
-.pricing-button:focus {
-    background-color: #e1f1ff;
-}
-
-.pricing-button.is-featured {
-    background-color: #016ff9;
-    color: #e1f1ff;
-}
-
-.pricing-button.is-featured:hover {
-    background-color: #e1f1ff;
-    color: #054798;
 }
 
 .pricing-button2 {
-    border: 2px solid #E94560;
     border-radius: 10px;
-    color: #E94560;
     display: inline-block;
     padding: 15px 30px;
     text-decoration: none;
     margin: 25px 0;
     transform: background-color 200ms ease-in-out;
-}
-
-.pricing-button2:hover,
-.pricing-button2:focus {
-    background-color: #ffe1e1;
 }
 
 .pricing-button2.is-featured {
@@ -285,7 +243,6 @@ html {
 }
 
 .pricing-button3 {
-    border: 2px solid #554994;
     border-radius: 10px;
     color: #554994;
     display: inline-block;
@@ -293,11 +250,6 @@ html {
     text-decoration: none;
     margin: 25px 0;
     transform: background-color 200ms ease-in-out;
-}
-
-.pricing-button3:hover,
-.pricing-button3:focus {
-    background-color: #f7e1ff;
 }
 
 .pricing-button3.is-featured {
@@ -316,7 +268,6 @@ html {
     }
     .pricing-plan {
         border-bottom: none;
-        border-right: 2px solid #e1f1ff;
         padding: 25px 50px;
     }
     .pricing-plan:last-child {
