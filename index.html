@@ -14,9 +14,9 @@
   </head>
 <body>
 
-    <div id="navbar">
+    <div id="navbar" class="navbar-change">
 
-        <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
               
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,7 +61,7 @@
                 </div>
                 <form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
+                  <button class="btn btn-outline-secondary" type="submit">Search</button>
                 </form>
               </div>
             </div>
@@ -209,7 +209,7 @@
 
     <div class="footer-basic">
         <footer>
-                        <ul class="list-inline">
+            <ul class="list-inline">
                 <li class="list-inline-item"><a href="#">Home</a></li>
                 <li class="list-inline-item"><a href="#">Services</a></li>
                 <li class="list-inline-item"><a href="#">About</a></li>
@@ -244,8 +244,16 @@
       const enableDarkMode = () => {
         $("h2").css({ color: "black" });
         $(".toggler").attr("src", "icons8-sun-50.png");
-        $(".container").css({ "background-color": "black" });
+        $(".container").css({ "background-color": "#383c42" });
         $(".mode").css({ "background-color": "#FFFFCC" });
+        $(".btn-outline-secondary").css({"border-color": "white"});
+        $(".btn-outline-secondary").css({"color": "white"});
+        $(".navbar-change").css({"background-color": "#6d737d"});
+        $(".nav-link").css({"color": "white"});
+        $("body").css({"background-color": "#383c42"});
+        $(".footer-basic").css({"background-color": "#6d737d"});
+        $(".list-inline-item").css({"color": "white"});
+        $(".copyright").css({"color": "white"});
         localStorage.setItem("dark-mode", "enabled");
       };
 
@@ -255,12 +263,23 @@
         $(".container-bg1").css({ "background-color": "#3f92f9" });
         $(".container-bg2").css({ "background-color": "#B25068" });
         $(".container-bg3").css({ "background-color": "#554994" });
-        $(".mode").css({ "background-color": "white" });
+        $("body").css({"background-color": "white"});
+        $(".navbar-change").css({"background-color": "#dce4f2"});
+        $(".btn-outline-secondary").css({"border-color": "black"});
+        $(".btn-outline-secondary").css({"color": "black"});
+        $(".nav-link").css({"color": "black"});
+        $(".footer-basic").css({"background-color": "#dce4f2"});
+        $(".list-inline-item").css({"color": "black"});
+        $(".copyright").css({"color": "black"});
         localStorage.setItem("dark-mode", "disabled");
       };
 
       if (darkMode === "enabled") {
         enableDarkMode(); // set state of darkMode on page load
+      }
+
+      if (darkMode === "disabled") {
+        disableDarkMode(); // set state of darkMode on page load
       }
 
       $(".mode").click(function () {
