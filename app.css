@@ -354,16 +354,17 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-#navbar{
-  position: sticky;
-  top: 0;
-}
-
 
 html {
     box-sizing: border-box;
     font-family: 'roboto', sans-serif;
     scroll-behavior: smooth;
+}
+.changeMode{
+    display: inline-block;
+    position: absolute;
+    top:15px;
+    left:15px;
 }
 
 .mode{
@@ -481,7 +482,6 @@ html {
     text-decoration: none;
     margin: 25px 0;
     transform: background-color 200ms ease-in-out;
-    box-shadow: 2px 2px 20px #62a3f2;
 }
 
 .pricing-button:hover,
@@ -508,7 +508,6 @@ html {
     text-decoration: none;
     margin: 25px 0;
     transform: background-color 200ms ease-in-out;
-    box-shadow: 2px 2px 20px #ff7b7b;
 }
 
 .pricing-button2:hover,
@@ -535,7 +534,6 @@ html {
     text-decoration: none;
     margin: 25px 0;
     transform: background-color 200ms ease-in-out;
-    box-shadow: 2px 2px 20px #9782f7;
 }
 
 .pricing-button3:hover,
@@ -690,16 +688,4 @@ html {
 .btn-to-top span {
     bottom: 5px;
     position: relative;
-}
-
-#navbar{
-  margin-bottom: 9%;
-}
-
-.change-mode {
-  margin-right: 10px;
-}
-
-.toggler {
-  max-height: 46px;
 }
