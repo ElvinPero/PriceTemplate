@@ -1,128 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Price Tiers</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
     <link href="app.css" rel="stylesheet">
-</head>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </head>
 <body>
+
+    <div id="navbar" class="navbar-change">
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+               
+                    <li class="nav-item">
+
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    
+                    <a class="nav-link" href="#">About us</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Contact us
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">About pricing !</a></li>
+                      <li><a class="dropdown-item" href="#">About orgainisation</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here!</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/ElvinPero/PriceTemplate">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                        </svg> Repository
+                    </a>
+                  </li>
+                </ul>
+                <div class="change-mode">
+                  <button class="mode">
+                    <img class="toggler" src="moon-and-stars-svgrepo-com.svg" alt="Toggle Mode" />
+                  </button>
+                </div>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-secondary" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </div>
     <div class="loader"></div>
 
-    <div class="changeMode">
-        <button class="mode" ><img class="toggler" src="moon-and-stars-svgrepo-com.svg"> </button>
-    </div>
     <div class="container container-bg1">
-        <div class="panel pricing-table">
-            <div class="pricing-plan">
-                <img alt="" class="pricing-img" src="icons/icon1.png">
-                <h2 class="pricing-header">Personal</h2>
-                <ul class="pricing-features">
-                    <li class="pricing-features-item">Custom domains</li>
-                    <li class="pricing-features-item">Sleeps after 30 mins of inactivity</li>
-                </ul>
-                <span class="pricing-price">Free</span>
-                <a class="pricing-button" href="#/">Sign up</a>
-            </div>
-            <div class="pricing-plan">
-                <img alt="" class="pricing-img" src="icons/icon2.png">
-                <h2 class="pricing-header">Small team</h2>
-                <ul class="pricing-features">
-                    <li class="pricing-features-item">Never sleeps</li>
-                    <li class="pricing-features-item">Multiple workers for more powerful apps</li>
-                </ul>
-                <span class="pricing-price">$150</span>
-                <a class="pricing-button is-featured" href="#/">Free trial</a>
-            </div>
-            <div class="pricing-plan">
-                <img alt="" class="pricing-img" src="icons/icon3.png">
-                <h2 class="pricing-header">Enterprise</h2>
-                <ul class="pricing-features">
-                    <li class="pricing-features-item">Dedicated</li>
-                    <li class="pricing-features-item">Simple horizontal scalability</li>
-                </ul>
-                <span class="pricing-price">$400</span>
-                <a class="pricing-button" href="#/">Free trial</a>
-            </div>
+      <div class="panel pricing-table">
+        <div class="pricing-plan">
+          <img alt="" class="pricing-img" src="icons/icon1.png" />
+          <h2 class="pricing-header">Personal</h2>
+          <ul class="pricing-features">
+            <li class="pricing-features-item">Custom domains</li>
+            <li class="pricing-features-item">
+              Sleeps after 30 mins of inactivity
+            </li>
+          </ul>
+          <span class="pricing-price">Free</span>
+          <a class="pricing-button" href="#/">Sign up</a>
         </div>
-    </div><!-- /.container -->
+        <div class="pricing-plan">
+          <img alt="" class="pricing-img" src="icons/icon2.png" />
+          <h2 class="pricing-header">Small team</h2>
+          <ul class="pricing-features">
+            <li class="pricing-features-item">Never sleeps</li>
+            <li class="pricing-features-item">
+              Multiple workers for more powerful apps
+            </li>
+          </ul>
+          <span class="pricing-price">$150</span>
+          <a class="pricing-button is-featured" href="#/">Free trial</a>
+        </div>
+        <div class="pricing-plan">
+          <img alt="" class="pricing-img" src="icons/icon3.png" />
+          <h2 class="pricing-header">Enterprise</h2>
+          <ul class="pricing-features">
+            <li class="pricing-features-item">Dedicated</li>
+            <li class="pricing-features-item">Simple horizontal scalability</li>
+          </ul>
+          <span class="pricing-price">$400</span>
+          <a class="pricing-button" href="#/">Free trial</a>
+        </div>
+      </div>
+    </div>
+    <!-- /.container -->
     <div class="container container-bg2">
-        <div class="panel">
-            <div class="pricing-plan">
-                <img alt="" class="pricing-img" src="icons/icon1.png">
-                <h2 class="pricing-header">Personal</h2>
-                <ul class="pricing-features">
-                    <li class="pricing-features-item pricing-features-item2">Custom domains</li>
-                    <li class="pricing-features-item pricing-features-item2">Sleeps after 30 mins of inactivity</li>
-                </ul>
-                <span class="pricing-price pricing-price2">Free</span>
-                <a class="pricing-button pricing-button2" href="#/">Sign up</a>
-            </div>
-            <div class="pricing-plan">
-                <img alt="" class="pricing-img" src="icons/icon2.png">
-                <h2 class="pricing-header">Small team</h2>
-                <ul class="pricing-features">
-                    <li class="pricing-features-item pricing-features-item2">Never sleeps</li>
-                    <li class="pricing-features-item pricing-features-item2">Multiple workers for more powerful apps
-                    </li>
-                </ul>
-                <span class="pricing-price pricing-price2">$150</span>
-                <a class="pricing-button pricing-button2 is-featured" href="#/">Free trial</a>
-            </div>
-            <div class="pricing-plan">
-                <img alt="" class="pricing-img" src="icons/icon3.png">
-                <h2 class="pricing-header">Enterprise</h2>
-                <ul class="pricing-features">
-                    <li class="pricing-features-item pricing-features-item2">Dedicated</li>
-                    <li class="pricing-features-item pricing-features-item2">Simple horizontal scalability</li>
-                </ul>
-                <span class="pricing-price pricing-price2">$400</span>
-                <a class="pricing-button pricing-button2" href="#/">Free trial</a>
-            </div>
+      <div class="panel">
+        <div class="pricing-plan">
+          <img alt="" class="pricing-img" src="icons/icon1.png" />
+          <h2 class="pricing-header">Personal</h2>
+          <ul class="pricing-features">
+            <li class="pricing-features-item pricing-features-item2">
+              Custom domains
+            </li>
+            <li class="pricing-features-item pricing-features-item2">
+              Sleeps after 30 mins of inactivity
+            </li>
+          </ul>
+          <span class="pricing-price pricing-price2">Free</span>
+          <a class="pricing-button pricing-button2" href="#/">Sign up</a>
         </div>
-    </div><!-- /.container -->
+        <div class="pricing-plan">
+          <img alt="" class="pricing-img" src="icons/icon2.png" />
+          <h2 class="pricing-header">Small team</h2>
+          <ul class="pricing-features">
+            <li class="pricing-features-item pricing-features-item2">
+              Never sleeps
+            </li>
+            <li class="pricing-features-item pricing-features-item2">
+              Multiple workers for more powerful apps
+            </li>
+          </ul>
+          <span class="pricing-price pricing-price2">$150</span>
+          <a class="pricing-button pricing-button2 is-featured" href="#/"
+            >Free trial</a
+          >
+        </div>
+        <div class="pricing-plan">
+          <img alt="" class="pricing-img" src="icons/icon3.png" />
+          <h2 class="pricing-header">Enterprise</h2>
+          <ul class="pricing-features">
+            <li class="pricing-features-item pricing-features-item2">
+              Dedicated
+            </li>
+            <li class="pricing-features-item pricing-features-item2">
+              Simple horizontal scalability
+            </li>
+          </ul>
+          <span class="pricing-price pricing-price2">$400</span>
+          <a class="pricing-button pricing-button2" href="#/">Free trial</a>
+        </div>
+      </div>
+    </div>
+    <!-- /.container -->
     <div class="container container-bg3">
-        <div class="panel">
-            <div class="pricing-plan">
-                <img alt="" class="pricing-img" src="icons/icon1.png">
-                <h2 class="pricing-header">Personal</h2>
-                <ul class="pricing-features">
-                    <li class="pricing-features-item pricing-features-item3">Custom domains</li>
-                    <li class="pricing-features-item pricing-features-item3">Sleeps after 30 mins of inactivity</li>
-                </ul>
-                <span class="pricing-price pricing-price3">Free</span>
-                <a class="pricing-button pricing-button3" href="#/">Sign up</a>
-            </div>
-            <div class="pricing-plan">
-                <img alt="" class="pricing-img" src="icons/icon2.png">
-                <h2 class="pricing-header">Small team</h2>
-                <ul class="pricing-features">
-                    <li class="pricing-features-item pricing-features-item3">Never sleeps</li>
-                    <li class="pricing-features-item pricing-features-item3">Multiple workers for more powerful apps
-                    </li>
-                </ul>
-                <span class="pricing-price pricing-price3">$150</span>
-                <a class="pricing-button pricing-button3 is-featured" href="#/">Free trial</a>
-            </div>
-            <div class="pricing-plan">
-                <img alt="" class="pricing-img" src="icons/icon3.png">
-                <h2 class="pricing-header">Enterprise</h2>
-                <ul class="pricing-features">
-                    <li class="pricing-features-item pricing-features-item3">Dedicated</li>
-                    <li class="pricing-features-item pricing-features-item3">Simple horizontal scalability</li>
-                </ul>
-                <span class="pricing-price pricing-price3">$400</span>
-                <a class="pricing-button pricing-button3" href="#/">Free trial</a>
-            </div>
+      <div class="panel">
+        <div class="pricing-plan">
+          <img alt="" class="pricing-img" src="icons/icon1.png" />
+          <h2 class="pricing-header">Personal</h2>
+          <ul class="pricing-features">
+            <li class="pricing-features-item pricing-features-item3">
+              Custom domains
+            </li>
+            <li class="pricing-features-item pricing-features-item3">
+              Sleeps after 30 mins of inactivity
+            </li>
+          </ul>
+          <span class="pricing-price pricing-price3">Free</span>
+          <a class="pricing-button pricing-button3" href="#/">Sign up</a>
         </div>
-    </div><!-- /.container -->
+        <div class="pricing-plan">
+          <img alt="" class="pricing-img" src="icons/icon2.png" />
+          <h2 class="pricing-header">Small team</h2>
+          <ul class="pricing-features">
+            <li class="pricing-features-item pricing-features-item3">
+              Never sleeps
+            </li>
+            <li class="pricing-features-item pricing-features-item3">
+              Multiple workers for more powerful apps
+            </li>
+          </ul>
+          <span class="pricing-price pricing-price3">$150</span>
+          <a class="pricing-button pricing-button3 is-featured" href="#/"
+            >Free trial</a
+          >
+        </div>
+        <div class="pricing-plan">
+          <img alt="" class="pricing-img" src="icons/icon3.png" />
+          <h2 class="pricing-header">Enterprise</h2>
+          <ul class="pricing-features">
+            <li class="pricing-features-item pricing-features-item3">
+              Dedicated
+            </li>
+            <li class="pricing-features-item pricing-features-item3">
+              Simple horizontal scalability
+            </li>
+          </ul>
+          <span class="pricing-price pricing-price3">$400</span>
+          <a class="pricing-button pricing-button3" href="#/">Free trial</a>
+        </div>
+      </div>
+    </div>
+    <!-- /.container -->
 
     <div class="footer-basic">
         <footer>
-                        <ul class="list-inline">
+            <ul class="list-inline">
                 <li class="list-inline-item"><a href="#">Home</a></li>
                 <li class="list-inline-item"><a href="#">Services</a></li>
                 <li class="list-inline-item"><a href="#">About</a></li>
@@ -134,56 +221,91 @@
     </div>
 
     <a href="#" class="btn-to-top">
-        <span>&#8593;</span>
+      <span>&#8593;</span>
     </a>
 
-  
-    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <script>
-        $(document).ready(function() {
+      $(document).ready(function() {
         //Preloader
         preloaderFadeOutTime = 1000;
         function hidePreloader() {
-        var preloader = $('.loader');
-        preloader.fadeOut(preloaderFadeOutTime);
+          var preloader = $('.loader');
+          preloader.fadeOut(preloaderFadeOutTime);
         }
         hidePreloader();
-        });
-        </script>
+      });
+      </script>
 
     <script>
-        var mode=true;
-        $(".mode").click(function(){
-    if(mode===false)
-   { 
-    console.log(mode);
-    
-    $("h2").css({"color" :"#888"});
-    $(".toggler").attr("src", "moon-and-stars-svgrepo-com.svg");
+      let darkMode = localStorage.getItem("dark-mode");
 
-    
-    $(".container-bg1").css({"background-color" :"#3f92f9"});
-    $(".container-bg2").css({"background-color" :"#B25068"})
-    $(".container-bg3").css({"background-color" :"#554994"});
-    $(".mode").css({"background-color" :"white"})
-    mode=true;
-}
-    else{
-        console.log(mode);
-        
-        $("h2").css({"color" :"black"});
+      const enableDarkMode = () => {
+        $("h2").css({ color: "black" });
         $(".toggler").attr("src", "icons8-sun-50.png");
-        $(".container").css({"background-color" :"black"})
-       $(".mode").css({"background-color" :"#FFFFCC"})
-       
-        mode=false;
-    }
-    
+        $(".container").css({ "background-color": "#383c42" });
+        $(".mode").css({ "background-color": "#FFFFCC" });
+        $(".btn-outline-secondary").css({"border-color": "white"});
+        $(".btn-outline-secondary").css({"color": "white"});
+        $(".navbar-change").css({"background-color": "#6d737d"});
+        $(".nav-link").css({"color": "white"});
+        $("body").css({"background-color": "#383c42"});
+        $(".footer-basic").css({"background-color": "#6d737d"});
+        $(".list-inline-item").css({"color": "white"});
+        $(".copyright").css({"color": "white"});
+        localStorage.setItem("dark-mode", "enabled");
+      };
 
-})
+      const disableDarkMode = () => {
+        $("h2").css({ color: "#888" });
+        $(".toggler").attr("src", "moon-and-stars-svgrepo-com.svg");
+        $(".container-bg1").css({ "background-color": "#3f92f9" });
+        $(".container-bg2").css({ "background-color": "#B25068" });
+        $(".container-bg3").css({ "background-color": "#554994" });
+        $("body").css({"background-color": "white"});
+        $(".navbar-change").css({"background-color": "#dce4f2"});
+        $(".btn-outline-secondary").css({"border-color": "black"});
+        $(".btn-outline-secondary").css({"color": "black"});
+        $(".nav-link").css({"color": "black"});
+        $(".footer-basic").css({"background-color": "#dce4f2"});
+        $(".list-inline-item").css({"color": "black"});
+        $(".copyright").css({"color": "black"});
+        localStorage.setItem("dark-mode", "disabled");
+      };
+
+      if (darkMode === "enabled") {
+        enableDarkMode(); // set state of darkMode on page load
+      }
+
+      if (darkMode === "disabled") {
+        disableDarkMode(); // set state of darkMode on page load
+      }
+
+      $(".mode").click(function () {
+        darkMode = localStorage.getItem("dark-mode") || 'disabled'; // update darkMode when clicked
+        if (darkMode === "disabled") {
+          enableDarkMode();
+        } else {
+          disableDarkMode();
+        }
+      });
+          const scrollToTop = document.querySelector(".btn-to-top");
+        scrollToTop.style.display = "none";
+
+        scrollToTop.addEventListener("click", e => {
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: "smooth"
+            });
+        });
+
+        window.addEventListener('scroll', e => {
+            scrollToTop.style.display = window.scrollY > (window.screen.height / 2) ? 'block' : 'none';
+        });
     </script>
 </body>
 
 </html>
+
