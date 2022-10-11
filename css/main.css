@@ -65,13 +65,13 @@ table {
   top: 0;
 }
 
-.mode{
+/* .mode{
     cursor: pointer;
     z-index: 2;
     border-radius: 10%;
     background-color: white;
     
-}
+} */
 .container {
     display: flex;
     justify-content: center;
@@ -336,6 +336,49 @@ table {
     color:#aaa;
     margin-bottom:0;
   }
+
+  #tog.active{
+        background: #fff;
+        box-shadow: inset 0 2px 60px rgba(0, 0, 0, 0.1),
+                    inset 0 2px 8px rgba(0, 0, 0, 0.1),
+                    inset 0 -4px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  #tog{
+     position: relative;
+     display: block;
+     width: 61px;
+     height: 29px;
+     border-radius: 160px;
+     background: rgb(52, 44, 44);
+     transition: 0.5s;
+     cursor: pointer;
+     left: 1107px;
+  }
+
+  #tog .indicator{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 28px;
+    background: linear-gradient(to bottom, grey, black);
+    border-radius: 50%;
+    transform: scale(0.9);
+    box-shadow: 0.8px 4px rgba(0, 0, 0, 0.5), inset 0 4px 4px rgba(255, 255, 255, 0.2), inset 0 -4px 4px rgba(255, 255, 255, 0.2);
+    transition: 0.5s;
+  }
+
+  #tog.active .indicator{
+    left: 29px;
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(174, 166, 166));
+    box-shadow: 0.8px 4px rgba(0,0,0,0.1), inset 0 4px 4px rgba(255, 255, 255, 1), inset 0 -4px 4px rgba(255, 255, 255, 1);
+  }
+
+  body.active{
+    background-color: black;
+  }
+
 @media (max-width: 768px) {
     .menu { 
      display:none;
@@ -393,12 +436,4 @@ table {
 
 #navbar{
   margin-bottom: 9%;
-}
-
-.change-mode {
-  margin-right: 10px;
-}
-
-.toggler {
-  max-height: 46px;
 }

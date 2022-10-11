@@ -21,9 +21,12 @@
         <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
             <div class="container-fluid">
               
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+              <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
+              </button> -->
+              <div id="tog">
+                <i class="indicator"></i>
+              </div>
 
               <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
@@ -56,11 +59,6 @@
                     </a>
                   </li>
                 </ul>
-                <div class="change-mode">
-                  <button class="mode">
-                    <img class="toggler" src="assets/moon-and-stars-svgrepo-com.svg" alt="Toggle Mode" />
-                  </button>
-                </div>
                 <form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                   <button class="btn btn-outline-success" type="submit">Search</button>
@@ -70,7 +68,7 @@
           </nav>
     </div>
     <div class="loader"></div>
-
+<div class="bodi">
     <div class="container container-bg1">
       <div class="panel pricing-table">
         <div class="pricing-plan">
@@ -207,6 +205,7 @@
         </div>
       </div>
     </div>
+  </div>
     <!-- /.container -->
 
     <div class="footer-basic">
@@ -241,53 +240,60 @@
       </script>
 
     <script>
-      let darkMode = localStorage.getItem("dark-mode");
-
-      const enableDarkMode = () => {
-        $("h2").css({ color: "black" });
-        $(".toggler").attr("src", "assets/icons8-sun-50.png");
-        $(".container").css({ "background-color": "black" });
-        $(".mode").css({ "background-color": "#FFFFCC" });
-        localStorage.setItem("dark-mode", "enabled");
-      };
-
-      const disableDarkMode = () => {
-        $("h2").css({ color: "#888" });
-        $(".toggler").attr("src", "assets/moon-and-stars-svgrepo-com.svg");
-        $(".container-bg1").css({ "background-color": "#3f92f9" });
-        $(".container-bg2").css({ "background-color": "#B25068" });
-        $(".container-bg3").css({ "background-color": "#554994" });
-        $(".mode").css({ "background-color": "white" });
-        localStorage.setItem("dark-mode", "disabled");
-      };
-
-      if (darkMode === "enabled") {
-        enableDarkMode(); // set state of darkMode on page load
+      
+      const body=document.querySelector('body');
+      const toggle=document.getElementById('tog');
+      toggle.onclick=function(){
+        toggle.classList.toggle('active');
+        body.classList.toggle('active');
       }
-
-      $(".mode").click(function () {
-        darkMode = localStorage.getItem("dark-mode") || 'disabled'; // update darkMode when clicked
-        if (darkMode === "disabled") {
-          enableDarkMode();
-        } else {
-          disableDarkMode();
-        }
+      
+      
+      const scrollToTop = document.querySelector(".btn-to-top");
+      scrollToTop.style.display = "none";
+      
+      scrollToTop.addEventListener("click", e => {
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: "smooth"
+        });
       });
-          const scrollToTop = document.querySelector(".btn-to-top");
-        scrollToTop.style.display = "none";
-
-        scrollToTop.addEventListener("click", e => {
-            window.scrollTo({
-                top: 0,
-                left: 0,
-                behavior: "smooth"
-            });
-        });
-
-        window.addEventListener('scroll', e => {
-            scrollToTop.style.display = window.scrollY > (window.screen.height / 2) ? 'block' : 'none';
-        });
-    </script>
+      
+      window.addEventListener('scroll', e => {
+        scrollToTop.style.display = window.scrollY > (window.screen.height / 2) ? 'block' : 'none';
+      });
+      // let darkMode = localStorage.getItem("dark-mode");
+      // const enableDarkMode = () => {
+        //   $("h2").css({ color: "black" });
+        //   $(".toggler").attr("src", "assets/icons8-sun-50.png");
+        //   $(".container").css({ "background-color": "black" });
+        //   $(".mode").css({ "background-color": "#FFFFCC" });
+        //   localStorage.setItem("dark-mode", "enabled");
+        // };
+        // const disableDarkMode = () => {
+          //   $("h2").css({ color: "#888" });
+          //   $(".toggler").attr("src", "assets/moon-and-stars-svgrepo-com.svg");
+          //   $(".container-bg1").css({ "background-color": "#3f92f9" });
+          //   $(".container-bg2").css({ "background-color": "#B25068" });
+          //   $(".container-bg3").css({ "background-color": "#554994" });
+          //   $(".mode").css({ "background-color": "white" });
+          //   localStorage.setItem("dark-mode", "disabled");
+          // };
+          
+          // if (darkMode === "enabled") {
+            //   enableDarkMode(); // set state of darkMode on page load
+            // }
+            
+            // $(".mode").click(function () {
+              //   darkMode = localStorage.getItem("dark-mode") || 'disabled'; // update darkMode when clicked
+              //   if (darkMode === "disabled") {
+                //     enableDarkMode();
+                //   } else {
+      //     disableDarkMode();
+      //   }
+      // });
+      </script>
 </body>
 
 </html>
