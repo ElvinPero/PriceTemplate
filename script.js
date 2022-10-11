@@ -24,15 +24,11 @@ $(document).ready(function() {
 });
 
 var icon = document.getElementById("icon");
+const checkbox = document.getElementById('checkbox');
 
-icon.onclick = function(){
-  document.body.classList.toggle("dark_theme");
-  if(document.body.classList.contains("dark_theme")){
-    icon.src = "assets/icons8-sun-50.png";
-  }else{
-    icon.src = "assets/moon-and-stars-svgrepo-com.svg";
-  }
-}
+checkbox.addEventListener('change', ()=>{
+  document.body.classList.toggle('dark');
+})
 
 
 const scrollToTop = document.querySelector(".btn-to-top");

@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/
+* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -333,11 +333,47 @@ table {
 #navbar{
   margin-bottom: 9%;
 }
-
+body.dark {
+  background-color: #292c35;
+}
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+.label {
+  width: 40px;
+  height: 20px;
+  background-color:#111;
+  display: flex;
+  border-radius:50px;
+  align-items: center;
+  justify-content: space-between left;
+  padding: -25px;
+  position: relative;
+  transform: scale(1.5);
+}
 .change-mode {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .toggler {
-  max-height: 46px;
+  max-height: 40px;
 }
+.ball {
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+/*  target the elemenent after the label*/
+.checkbox:checked + .label .ball{
+  transform: translateX(20px);
+}
+
+
+
