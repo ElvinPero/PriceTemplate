@@ -47,7 +47,7 @@ input[type='checkbox'] {
   height: 35px;
   background: #fff;
   border-radius: 90px;
-  transition: 0.3s;
+  transition: 10ms;
 }
 
 input:checked + .toggleLabel {
@@ -57,6 +57,7 @@ input:checked + .toggleLabel {
 input:checked + .toggleLabel:after {
   left: calc(100% - 5px);
   transform: translateX(-100%);
+  transition: 10ms;
 }
 
 .toggleLabel:active:after {
@@ -67,7 +68,7 @@ html.transition,
 html.transition *,
 html.transition *:before,
 html.transition *:after {
-  transition: all 750ms ease-in-out !important;
+  transition: all 200ms ease-in-out !important;
   transition-delay: 0 !important;
 }
 
