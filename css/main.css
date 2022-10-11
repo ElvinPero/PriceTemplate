@@ -1,19 +1,15 @@
-* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 *{
   margin: 0;
   padding: 0;
 }
 
 :root{
-  
+
     --primary-color: #edf2fc;
     --secondary-color: #212121;
     --tertiary-color: #342453;
 
-    
+
 }
 .dark_theme{
     --primary-color: #000106;
@@ -37,12 +33,7 @@ html {
     font-family: 'roboto', sans-serif;
     scroll-behavior: smooth;
 }
-
-
-
-
 /* HTML5 display-role reset for older browsers */
-
 article,
 aside,
 details,
@@ -56,7 +47,6 @@ nav,
 section {
     display: block;
 }
-
 body {
     line-height: 1;
     position: relative;
@@ -66,11 +56,9 @@ body {
 ol, ul {
     list-style: none;
 }
-
 blockquote, q {
     quotes: none;
 }
-
 blockquote:before,
 blockquote:after,
 q:before,
@@ -78,7 +66,6 @@ q:after {
     content: '';
     content: none;
 }
-
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -87,11 +74,11 @@ table {
   position: sticky;
   top: 0;
 }
-
 .mode{
     cursor: pointer;
     z-index: 2;
     border-radius: 10%;
+    background-color: white;
     background-color: var(--secondary-color));
 
 }
@@ -105,11 +92,9 @@ table {
 }
 
 
-
 .panel {
     margin: 10px 20px;
 }
-
 .pricing-img {
     margin-bottom: 25px;
     width: 100%;
@@ -117,6 +102,7 @@ table {
 }
 
 .panel {
+    background-color: white;
     background-color: var(--primary-color);
     border-radius: 10px;
     padding: 15px 25px;
@@ -129,15 +115,18 @@ table {
 }
 
 .pricing-plan {
+    border-bottom: solid 1px #e1f1ff;
     border-bottom: solid 1px var(--secondary-color);
 }
 
 .pricing-plan:last-child {
+    border-bottom: none;
     border-bottom: 2px solid var(--secondary-color);
     color: var(--secondary-color);
 }
 
 .pricing-header {
+    color: #888;
     color: var(--secondary-color);
     font-weight: 600;
     letter-spacing: 1px;
@@ -145,10 +134,12 @@ table {
 
 .pricing-features {
     margin: 50px 0 25px;
+    color: #016ff9;
     color: var(--secondary-color);
 }
 
 .pricing-features-item:last-child {
+    border-bottom: 2px solid #e1f1ff;
     border-bottom: 2px solid var(--secondary-color);
     color: var(--secondary-color) ;
 }
@@ -157,7 +148,7 @@ table {
     display: block;
     font-size: 32px;
     font-weight: 700;
-    
+
 }
 
 .pricing-button {
@@ -165,13 +156,11 @@ table {
   text-decoration: none;
   transform: background-color 200ms ease-in-out;
 }
-
 .pricing-button, .style {
   border-radius: 10px;
   padding: 15px 30px;
   margin: 25px 0;
 }
-
 .style {
   position: fixed;
   right: 10px;
@@ -180,14 +169,12 @@ table {
   transition: all 0.2s ease-in-out;
   font-size: 16px;
 }
-
 .style:hover {
   transform: scale(1.1);
   cursor: pointer;
   box-shadow: #000 0 0 10px;
   text-shadow: #fff 0 0 50px;
 }
-
 @media(min-width: 900px) {
     .panel {
         flex-direction: row;
@@ -195,6 +182,7 @@ table {
     }
     .pricing-plan {
         border-bottom: none;
+        border-right: 2px solid #e1f1ff;
         border-right: 2px solid var(--secondary-color);
         padding: 25px 50px;
     }
@@ -205,11 +193,11 @@ table {
     .container{
         padding:0;
     }
-
 }
 
 .footer-basic {
     padding: 40px 0;
+    background-color:#ffffff;
     background-color: var(--primary-color);
     color:#4b4c4d;
     display: flex;
@@ -217,7 +205,6 @@ table {
     justify-content: center;
     align-items: center;
   }
-
   .footer-basic ul {
     padding: auto;
     list-style:none;
@@ -227,26 +214,21 @@ table {
     margin-bottom:0;
     display: flex;
   }
-
   .footer-basic li {
     padding:0 10px;
   }
-
   .footer-basic ul a {
     color:inherit;
     text-decoration:none;
     opacity:0.8;
   }
-
   .footer-basic ul a:hover {
     opacity:1;
   }
-
   .footer-basic .social {
     text-align:center;
     padding-bottom:25px;
   }
-
   .footer-basic .social > a {
     font-size:24px;
     width:40px;
@@ -255,20 +237,20 @@ table {
     display:inline-block;
     text-align:center;
     border-radius:50%;
+    border:1px solid #ccc;
     border:1px solid var(--secondary-color);
     margin:0 8px;
     color:inherit;
     opacity:0.75;
   }
-
   .footer-basic .social > a:hover {
     opacity:0.9;
   }
-
   .footer-basic .copyright {
     margin-top:15px;
     text-align:center;
     font-size:13px;
+    color:#aaa;
     color: var(--secondary-color);
     margin-bottom:0;
   }
@@ -278,6 +260,7 @@ table {
     .menu {
      display:none;
      position: absolute;
+     background-color:#e1f1ff;
      background-color: var(--primary-color);
      right: 0;
      left: 0;
@@ -286,6 +269,7 @@ table {
     }
     .menu li:hover {
      display: inline-block;
+     background-color:#3f92f9;
      background-color: var(--secondary-color);
      transition: 0.3s ease;
     }
@@ -304,12 +288,12 @@ table {
      transform: translateX(35%);
     }
     .dropdown li:hover {
+     background-color: #3f92f9;
      background-color: var(--secondary-color);
     }
     }
 
 /* btn-to-top */
-
 .btn-to-top{
   position: fixed;
   width: 50px;
@@ -321,6 +305,7 @@ table {
   text-decoration: none;
   text-align: center;
   line-height: 60px;
+  color: white;
   color: var(--primary-color);
   font-size: 30px;
 }
@@ -329,51 +314,12 @@ table {
     bottom: 5px;
     position: relative;
 }
-
 #navbar{
   margin-bottom: 9%;
 }
-body.dark {
-  background-color: #292c35;
-}
-.checkbox {
-  opacity: 0;
-  position: absolute;
-}
-.label {
-  width: 40px;
-  height: 20px;
-  background-color:#111;
-  display: flex;
-  border-radius:50px;
-  align-items: center;
-  justify-content: space-between left;
-  padding: -25px;
-  position: relative;
-  transform: scale(1.5);
-}
 .change-mode {
-  margin-right: 20px;
+  margin-right: 10px;
 }
-
 .toggler {
-  max-height: 40px;
+  max-height: 46px;
 }
-.ball {
-  width: 15px;
-  height: 15px;
-  background-color: white;
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  border-radius: 50%;
-  transition: transform 0.2s linear;
-}
-
-/*  target the elemenent after the label*/
-.checkbox:checked + .label .ball{
-  transform: translateX(20px);
-}
-
-
-
