@@ -142,7 +142,10 @@ table {
     margin-bottom: 9%;
     background: var(--navbar) !important;
 }
-
+.mode{
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
 
 .container {
     display: flex;
