@@ -23,16 +23,38 @@ $(document).ready(function() {
   hidePreloader();
 });
 
-var icon = document.getElementById("icon");
+let darkMode = localStorage.getItem("dark-mode");
 
-icon.onclick = function(){
-  document.body.classList.toggle("dark_theme");
-  if(document.body.classList.contains("dark_theme")){
-    icon.src = "assets/icons8-sun-50.png";
-  }else{
-    icon.src = "assets/moon-and-stars-svgrepo-com.svg";
-  }
+const enableDarkMode = () => {
+  $("h2").css({ color: "black" });
+  $(".toggler").attr("src", "assets/icons8-sun-50.png");
+  $(".container").css({ "background-color": "black" });
+  $(".mode").css({ "background-color": "#FFFFCC" });
+  localStorage.setItem("dark-mode", "enabled");
+};
+
+const disableDarkMode = () => {
+  $("h2").css({ color: "#888" });
+  $(".toggler").attr("src", "assets/moon-and-stars-svgrepo-com.svg");
+  $(".container-bg1").css({ "background-color": "#3f92f9" });
+  $(".container-bg2").css({ "background-color": "#B25068" });
+  $(".container-bg3").css({ "background-color": "#554994" });
+  $(".mode").css({ "background-color": "white" });
+  localStorage.setItem("dark-mode", "disabled");
+};
+
+if (darkMode === "enabled") {
+  enableDarkMode(); // set state of darkMode on page load
 }
+
+$(".mode").click(function () {
+  darkMode = localStorage.getItem("dark-mode") || 'disabled'; // update darkMode when clicked
+  if (darkMode === "disabled") {
+    enableDarkMode();
+  } else {
+    disableDarkMode();
+  }
+});
 
 
 const scrollToTop = document.querySelector(".btn-to-top");
