@@ -18,9 +18,9 @@ This section should list any major frameworks/libraries used to bootstrap your
 project. Leave any add-ons/plugins for the acknowledgements section. Here are a
 few examples.
 
-- html
-- Css
-- Java script
+- HTML
+- CSS
+- JavaScript
 
 ### How to Contribute to this repository
 
@@ -41,7 +41,8 @@ cd PriceTemplate
 5. Make your changes
 
 ```markdown
-git add . git commit -m "Your commit Message" git push origin branch-name
+git add . git commit -m "Your commit Message"
+git push origin branch-name
 ```
 
 - Make a pull request.
@@ -49,9 +50,9 @@ git add . git commit -m "Your commit Message" git push origin branch-name
 
 ### NOTE
 
-- Make Sure you commit your changes in a new branch.
-- Make Sure you Give proper name to your files describing the addition.
-- Also Make Sure you comment your code wherever necessary.
+- Make sure you commit your changes in a new branch.
+- Make sure you give a proper name to your files describing the addition.
+- Also make sure you comment your code wherever necessary.
 
 ## Authors
 
