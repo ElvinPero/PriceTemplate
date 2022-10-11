@@ -369,6 +369,7 @@ table {
     line-height: 1.6;
     margin-bottom: 0;
     display: flex;
+
 }
 
 .footer-basic li {
@@ -415,6 +416,7 @@ table {
     color: #aaa;
     margin-bottom: 0;
 }
+
 
 @media (max-width: 768px) {
     .menu {
@@ -483,7 +485,9 @@ table {
     border-color: var(--toggle) !important;
 }
 
+
 .btn:hover {
     color: white !important;
     background: var(--blue) !important;
 }
+
