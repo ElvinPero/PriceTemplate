@@ -3,7 +3,7 @@
    License: none (public domain)
 */
 
-html,
+/* html,
 body,
 div,
 span,
@@ -83,7 +83,8 @@ summary,
 time,
 mark,
 audio,
-video {
+video 
+{
     margin: 0;
     padding: 0;
     border: 0;
@@ -91,9 +92,9 @@ video {
     font: inherit;
     vertical-align: baseline;
 }
-
+*/
 /* HTML5 display-role reset for older browsers */
-
+/*
 article,
 aside,
 details,
@@ -107,7 +108,9 @@ nav,
 section {
     display: block;
 }
-
+nav{
+    padding: 0%;
+}
 body {
     line-height: 1;
 }
@@ -133,7 +136,8 @@ q:after {
 table {
     border-collapse: collapse;
     border-spacing: 0;
-}
+} 
+*/
 
 html {
     box-sizing: border-box;
@@ -141,6 +145,10 @@ html {
     scroll-behavior: smooth;
 }
 
+li{
+    text-decoration: none;
+    list-style: none;
+}
 .container {
     display: flex;
     justify-content: center;
@@ -240,7 +248,7 @@ html {
     .pricing-plan {
         border-bottom: none;
         border-right: 2px solid #e1f1ff;
-        padding: 25px 50px;
+        padding: 25px 40px;
     }
     .pricing-plan:last-child {
         border-bottom: none;

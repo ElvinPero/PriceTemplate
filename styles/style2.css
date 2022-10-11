@@ -1,35 +1,93 @@
+html {
+  --bg: #cbcaca;
+  --bg-panel: #ebebeb;
+  --color-headings: black;
+  --color-text: black;
+  --toggle-btn: #231f20;
+  --container-bg: #b25068;
+  --borders-overall: #0d1b27;
+  --pricing-plan: #d4dadf;
+  --pricing-header-h2: #333333;
+  --pricing-button: #ffe1e1;
+  --pricing-button-hover: #ffe1e1;
+  --pricing-button-hover-txt: #e94560;
+  --style-btn: #e82556;
+}
+
+html[data-theme='dark'] {
+  --bg: #333333;
+  --bg-panel: #434343;
+  --color-headings: white;
+  --color-text: black;
+  --toggle-btn: #b5b5b5;
+  --container-bg: #8e4054;
+  --borders-overall: #e1f1ff;
+  --pricing-plan: #333333;
+  --pricing-header-h2: white;
+  --pricing-button: #635f5f;
+  --pricing-button-hover: #a62f2f;
+  --pricing-button-hover-txt: white;
+  --style-btn: #e94560;
+}
+
+body {
+  background-color: var(--container-bg);
+}
+
 .container-bg {
-    background-color: #B25068;
+  background-color: var(--container-bg);
 }
 
 .style {
-  background-color: #5dbfa8;
+  background-color: var(--style-btn);
 }
 
 .pricing-features-item {
-  color: #E94560;
+  color: #e94560;
 }
 
 .pricing-price {
-  color: #E94560;
+  color: #e94560;
 }
-
+.pricing-header {
+  color: var(--pricing-header-h2);
+  font-size: 1.25em;
+}
+.pricing-table.panel {
+  background-color: var(--pricing-plan);
+}
+.pricing-features-item {
+  border-top: 2px solid var(--borders-overall);
+  font-size: 0.8em;
+}
+.pricing-features-item:last-child {
+  border-bottom: 2px solid var(--borders-overall);
+}
+.pricing-plan {
+  border-right: 2px solid var(--borders-overall);
+}
 .pricing-button {
-    border: 2px solid #E94560;
-    color: #E94560;
+  border: 2px solid #e94560;
+  background-color: var(--pricing-button);
+  color: #e94560;
+  transition: all 0.3s;
 }
-
 .pricing-button:hover,
 .pricing-button:focus {
-    background-color: #ffe1e1;
+  background-color: var(--pricing-button);
+  color: var(--pricing-button-hover-txt);
+  border-color: var(--pricing-button);
+  transition: all 0.3s;
 }
-
 .pricing-button.is-featured {
-    background-color: #E94560;
-    color: #e1f1ff;
+  background-color: #d55066;
+  color: #e1f1ff;
+  border-color: #d55066;
+  transition: all 0.3s;
 }
 
 .pricing-button.is-featured:hover {
-    background-color: #ffe1e1;
-    color: #E94560;
+  background-color: #e30c30;
+  border-color: #e30c30;
+  transition: all 0.3s;
 }

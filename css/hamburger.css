@@ -1,0 +1,125 @@
+html {
+--ham-menu-color:var(--container-bg)
+}
+
+html[data-theme='light'] {
+--ham-menu-color:var(--container-bg)
+
+}
+
+
+.icon-1, .icon-2, .icon-3 {
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    width: 32px;
+    height: 3px;
+    background-color: black;
+    transition: all 400ms cubic-bezier(.84,.06,.52,1.8);
+}
+
+.icon-1 {
+  transform: translateY(-8px);
+  animation-delay: 100ms;
+}
+
+.icon-3 {
+  transform: translateY(8px);
+  animation-delay: 250ms;
+}
+
+.hamburger-icon {
+  position: fixed;
+  height: 60px;
+  width: 60px;
+  top:20px;
+  left:20px;
+  z-index: 100;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.25s ease-in-out;
+  background: rgba(197, 194, 194, 0.1);
+}
+/* .hamburger-icon:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.1);
+  } */
+.icon-1.a {
+  transform: rotate(40deg);
+}
+.icon-3.b {
+  transform: rotate(-40deg);
+}
+.icon-2.c {
+  opacity: 0;
+}
+
+.clear {
+  clear: both;
+}
+.ham-nav {
+  background: var(--container-bg);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  z-index: 10;
+  opacity: 0;
+  transition: all 600ms cubic-bezier(.62,.04,.3,1.56);
+  transition-delay: 100ms;
+}
+.ham-nav ul {
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+  }
+  .ham-nav ul a {
+    width: 13em;
+    display: inline-block;
+    padding: 10px 10px 10px 30px;
+    margin: auto auto;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 35px;
+    color: var(--color-text);
+    text-align: center;
+      
+    }
+ .ham-nav.show {
+ animation-fill-mode: forwards;
+   width: 100%;
+   opacity: 1;
+}
+.bg-color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--container-bg);
+  height: 100%;
+  width: 0%;
+  transition: all 500ms cubic-bezier(.62,.04,.3,1.8);
+  transition-delay: 50ms;
+  z-index: 5;
+  opacity: 1;
+}
+
+.bg-color.slide {
+  width: 50%;
+  opacity: 1;
+}
+.hamburger-menu button{
+    cursor: pointer;
+    font-size: 35px;
+    padding: 5px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    width: 13em;
+    border: 0px;
+    transition: all 0.4s;
+    background: var(--pricing-button);
+}
+.display-min{
+    display: none;
+}
