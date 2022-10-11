@@ -40,7 +40,6 @@ html {
 }
 
 
-
 /* HTML5 display-role reset for older browsers */
 
 article,
@@ -62,7 +61,19 @@ body {
     position: relative;
     background: var(--bg) !important;
 }
-
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: orange;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: blue;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid orange;  /* creates padding around scroll thumb */
+  }
 /* toggler */
 .toggle {
     display: flex;
@@ -142,10 +153,6 @@ table {
     margin-bottom: 9%;
     background: var(--navbar) !important;
 }
-.mode{
-    border-radius: 50%;
-    margin-right: 0.5rem;
-}
 
 .container {
     display: flex;
@@ -154,8 +161,6 @@ table {
     min-height: 100vh;
     padding: 30px 0;
 }
-
-
 
 .panel {
     margin: 10px 20px;
