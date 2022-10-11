@@ -29,7 +29,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
   </head>
-  <body>
+  <body onload="initHaptics()">
     <div class="toggle-container">
     <input id="switch" type="checkbox" name="theme" />
     <label class="toggleLabel" for="switch">
@@ -48,9 +48,11 @@
 
       <nav class="ham-nav" id="ham-nav">
         <ul class="ham-nav-ul display-min">
-          <a href="#services" onclick="closeSlideMenu()">Home</a>
+          <a href="#" onclick="closeSlideMenu()">Home</a>
           <br />
-          <a href="#testimony" onclick="closeSlideMenu()">Prices</a
+          <a href="#" onclick="closeSlideMenu()">Prices</a
+          ><br />
+          <a href="README.md" target="_blank" onclick="closeSlideMenu()">About</a
           ><br />
           <a href="https://github.com/ElvinPero/PriceTemplate" target="_blank"
             ><button id="lets-talk" class="lets-talk"><i class="bi bi-github"></i> Repository</button></a
@@ -95,7 +97,7 @@
           </div>
       </div>
     </div>
-      <button class="style is-featured" id="style" onclick="changeStyle()">
+      <button class="style is-featured styleBtn" id="style" onclick="changeStyle()">
           Change Style
       </button>
     </div> 
@@ -127,5 +129,6 @@
     <script src="./js/script.js"></script>
     <script src="./js/togglebtn.js"></script>
     <script src="./js/hamburger.js"></script>
+    <script src="./js/haptics.js"></script>
   </body>
 </html>

@@ -76,7 +76,7 @@ html[data-theme='light'] {
     left: 10%;
   }
   .ham-nav ul a {
-    width: 13em;
+    width: 8em;
     display: inline-block;
     padding: 10px 10px 10px 30px;
     margin: auto auto;
@@ -115,7 +115,7 @@ html[data-theme='light'] {
     padding: 5px;
     text-transform: uppercase;
     border-radius: 30px;
-    width: 13em;
+    width: 8em;
     border: 0px;
     transition: all 0.4s;
     background: var(--pricing-button);
