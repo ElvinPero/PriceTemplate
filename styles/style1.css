@@ -1,0 +1,44 @@
+.container-bg {
+    background-color: #3f92f9;
+}
+
+.style {
+  background-color: #c07d07;
+}
+
+.pricing-features-item {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 15px 0;
+    border-top: 2px solid #e1f1ff;
+}
+
+.pricing-features-item:last-child {
+    border-bottom: 2px solid #e1f1ff;
+}
+
+.pricing-price {
+    color: #016ff9;
+}
+
+.pricing-button {
+    border: 2px solid #9dd1ff;
+    color: #016ff9;
+}
+
+.pricing-button:hover,
+.pricing-button:focus {
+    background-color: #e1f1ff;
+}
+
+.pricing-button.is-featured {
+    background-color: #016ff9;
+    color: #e1f1ff;
+}
+
+.pricing-button.is-featured:hover {
+    background-color: #e1f1ff;
+    color: #054798;
+}
