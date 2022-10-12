@@ -6,7 +6,7 @@ html {
   --toggle-btn: #231f20;
   --container-bg: #554994;
   --borders-overall: #0d1b27;
-  --pricing-plan: #d4dadf;
+  --pricing-plan: #ffffff;
   --pricing-header-h2: #333333;
   --pricing-button: #d1caf6;
   --pricing-button-hover-txt: black;
@@ -26,13 +26,26 @@ html[data-theme='dark'] {
   --pricing-button-hover-txt: white;
 }
 
-
-
+.dark-mode {
+  --container-bg: #312532;
+  --pricing-plan: #1d202d;
+  --pricing-header-h2: white;
+}
 
 body {
   background-color: var(--container-bg);
 }
 
+nav .btn {
+  background-color: #8f79fd;
+}
+nav .navbar-nav .nav-link.active,
+nav .navbar-nav .nav-link:hover {
+  color:#8f79fd;
+}
+.form-switch .form-check-input:checked {
+  background-color: #8f79fd;
+}
 .container-bg {
   background-color: var(--container-bg);
 }

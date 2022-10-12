@@ -22,11 +22,6 @@ html[data-theme='dark'] {
   margin-right: 10px;
   margin-top: 15px;
 }
-input[type='checkbox'] {
-  height: 0;
-  width: 0;
-  visibility: hidden;
-}
 
 .toggleLabel {
   cursor: pointer;

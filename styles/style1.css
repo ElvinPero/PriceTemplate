@@ -6,7 +6,7 @@ html {
   --toggle-btn: #231f20;
   --container-bg: #3f92f9;
   --borders-overall: #0d1b27;
-  --pricing-plan: #d4dadf;
+  --pricing-plan: #fff;
   --pricing-header-h2: #333333;
   --pricing-button: #9dd1ff;
   --pricing-button-hover: #1f80f6;
@@ -19,7 +19,7 @@ html[data-theme='dark'] {
   --color-headings: white;
   --color-text: white;
   --toggle-btn: #b5b5b5;
-  --container-bg: #265895;
+  --container-bg: #262938;
   --borders-overall: #e1f1ff;
   --pricing-plan: #333333;
   --pricing-header-h2: white;
@@ -28,10 +28,25 @@ html[data-theme='dark'] {
   --style-btn:#3681dc;
 }
 
+.dark-mode {
+  --container-bg: #262938;
+  --pricing-plan: #1d202d;
+  --pricing-header-h2: white;
+}
+
 body {
   background-color: var(--container-bg);
 }
-
+nav .btn {
+  background-color: var(--style-btn);
+}
+nav .navbar-nav .nav-link.active,
+nav .navbar-nav .nav-link:hover {
+  color: var(--style-btn)
+}
+.form-switch .form-check-input:checked {
+  background-color: var(--style-btn);
+}
 .container-bg {
   background-color: var(--container-bg);
 }
@@ -90,4 +105,11 @@ body {
   color: white;
   transition: all 0.3s;
   border-color: #11519f;
+}
+
+.dark-mode {
+  color: #fff;
+}
+.dark-mode .container-bg {
+  background-color: var(--container-bg);
 }

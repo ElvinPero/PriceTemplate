@@ -15,9 +15,9 @@ html {
     font-family: 'roboto', sans-serif;
     scroll-behavior: smooth;
 }
-
-
-
+.dark-mode {
+    --bg: #1d202d;
+}
 
 /* HTML5 display-role reset for older browsers */
 
@@ -38,6 +38,57 @@ section {
 body {
     line-height: 1;
     position: relative;
+    background: var(--bg) !important;
+}
+
+/* toggler */
+.toggle {
+    display: flex;
+    outline: 1px solid black;
+
+}
+
+.label {
+    width: 5em;
+    height: 2em;
+    border-radius: 30px;
+    background: var(--toggle);
+    position: absolute;
+    cursor: pointer;
+    margin-left: -6em;
+    margin-top: -1em;
+}
+
+.ball {
+    width: 1.6em;
+    height: 1.6em;
+    background-color: var(--blue);
+    position: absolute;
+    border-radius: 50%;
+    margin-top: 2px;
+    margin-left: 3px;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+    margin-left: -92px;
+    margin-top: -14px;
+}
+
+.label.label::before {
+    content: "Dark Mode";
+    position: absolute;
+    display: inline-block;
+    width: 90px;
+    left: -100px;
+    color: var(--toggle);
+    top: 5px;
+}
+
+#checkbox:checked~.ball {
+    transform: translate(3em);
+}
+
+#checkbox {
+    display: block;
 }
 
 ol, ul {
@@ -54,20 +105,62 @@ q:before,
 q:after {
     content: '';
     content: none;
-} */
-
-/* table {
+} 
+table {
     border-collapse: collapse;
     border-spacing: 0;
-} */
-
-.mode{
-    cursor: pointer;
-    z-index: 2;
-    border-radius: 10%;
-    background-color: white;
-
 }
+
+#navbar {
+    position: sticky;
+    top: 0;
+    margin-bottom: 9%;
+    background: var(--navbar) !important;
+}
+nav.navbar {
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 3px 7px rgba(63, 63, 63, 0.245);
+    font-size: 14px;
+}
+nav .navbar-brand {
+    font-weight: 600;
+}
+nav .navbar-nav {
+    flex: 1;
+    justify-content: center;
+}
+nav .navbar-nav .nav-link {
+    padding: 10px 20px;
+    margin: 0 20px 0 0;
+}
+nav form {
+    border: 1px solid rgba(153, 153, 153, 0.242);
+    padding: 2px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+nav form input.form-control {
+    background-color: transparent;
+    border: none;
+    border-radius: 20px;
+}
+nav form button.btn {
+    border-radius: 20px;
+    color: #fff !important;
+    border: none;
+    padding: 7px 20px;
+}
+nav button.collapsed .fa-bars {
+    display: block;
+}
+nav button .fa-bars {
+    display: none;
+}
+nav button.collapsed .fa-times {
+    display: none;
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -154,7 +247,18 @@ q:after {
   box-shadow: #000 0 0 10px;
   text-shadow: #fff 0 0 50px;
 }
-
+@media(max-width: 990px) {
+    nav #checkbox {
+        margin-left: -1em;
+    }
+    nav .navbar-nav .nav-link {
+        padding-left: 0;
+    }
+    nav .form-switch {
+        padding-left: 1em;
+        margin-bottom: 20px;
+    }
+}
 @media(min-width: 900px) {
     .panel {
         flex-direction: row;
@@ -245,7 +349,6 @@ q:after {
   }
 
   
-
 /* btn-to-top */
 
 .btn-to-top{
@@ -274,6 +377,24 @@ q:after {
   margin-right: 10px;
 }
 
+
+/*
+darkmode styles
+*/
+.dark-mode nav {
+    background-color: var(--bg);
+    color: #fff;
+}
+.dark-mode nav a {
+    color: var(--grey);
+}
+.dark-mode nav button.navbar-toggler {
+    color: #fff;
+}
+.dark-mode .footer-basic {
+    background-color: var(--bg);
+    color: #fff;
+}
 .toggler {
   max-height: 46px;
 }
