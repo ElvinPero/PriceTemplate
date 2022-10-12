@@ -1,35 +1,91 @@
+html {
+  --bg: #cbcaca;
+  --bg-panel: #ebebeb;
+  --color-headings: black;
+  --color-text: black;
+  --toggle-btn: #231f20;
+  --container-bg: #554994;
+  --borders-overall: #0d1b27;
+  --pricing-plan: #d4dadf;
+  --pricing-header-h2: #333333;
+  --pricing-button: #d1caf6;
+  --pricing-button-hover-txt: black;
+}
+
+html[data-theme='dark'] {
+  --bg: #333333;
+  --bg-panel: #434343;
+  --color-headings: white;
+  --color-text: white;
+  --toggle-btn: #b5b5b5;
+  --container-bg: #413a63;
+  --borders-overall: #e1f1ff;
+  --pricing-plan: #333333;
+  --pricing-header-h2: white;
+  --pricing-button: #635f5f;
+  --pricing-button-hover-txt: white;
+}
+
+
+
+
+body {
+  background-color: var(--container-bg);
+}
+
 .container-bg {
-    background-color: #554994;
+  background-color: var(--container-bg);
 }
 
 .style {
-  background-color: #bbc77c;
+  background-color: #8f79fd;
 }
-
-.pricing-features-item {
-  color: #554994;
-}
-
 .pricing-price {
-  color: #554994;
+  color: #8f79fd;
+}
+.pricing-header{
+  color:var(--pricing-header-h2);
+  font-size: 1.25em;
+}
+.pricing-table.panel{
+  background-color: var(--pricing-plan);
+}
+.pricing-features-item {
+  border-top: 2px solid var(--borders-overall);
+  font-size: 0.8em;
+  color: #8f79fd;
+}
+.pricing-features-item:last-child {
+  border-bottom: 2px solid var(--borders-overall);
+}
+.pricing-plan{
+  border-right: 2px solid var(--borders-overall);
 }
 
-.pricing-button {
-    border: 2px solid #554994;
-    color: #554994;
-}
 
+.pricing-button{
+  border: 2px solid #8f79fd;
+  background-color: var(--pricing-button);
+  color: #8f79fd;
+  transition: all 0.3s;
+}
 .pricing-button:hover,
 .pricing-button:focus {
-    background-color: #f7e1ff;
+  border-color: var(--pricing-button);
+  color: var(--pricing-button-hover-txt);
+  transition: all 0.3s;
 }
-
 .pricing-button.is-featured {
-    background-color: #554994;
-    color: #e1f1ff;
+  background-color: #554994;
+  color: white;
+  transition: all 0.3s;
+  border-color: #554994;
+
+}
+.pricing-button.is-featured:hover {
+  background-color: #583edb;
+  color: white;
+  border-color: #583edb;
+  transition: all 0.3s;
 }
 
-.pricing-button.is-featured:hover {
-    background-color: #f7e1ff;
-    color: #554994;
-}
