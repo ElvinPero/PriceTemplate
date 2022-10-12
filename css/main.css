@@ -119,7 +119,7 @@ table {
 }
 nav.navbar {
     background-color: #fff;
-    padding: 10px 7%;
+    padding: 10px 20px;
     box-shadow: 0 3px 7px rgba(63, 63, 63, 0.245);
     font-size: 14px;
 }
@@ -251,11 +251,15 @@ nav button.collapsed .fa-times {
     nav #checkbox {
         margin-left: -1em;
     }
+    nav .navbar-nav .nav-link {
+        padding-left: 0;
+    }
+    nav .form-switch {
+        padding-left: 1em;
+        margin-bottom: 20px;
+    }
 }
 @media(min-width: 900px) {
-    nav.navbar {
-        padding: 10px 3%;
-    }
     .panel {
         flex-direction: row;
         margin: 0;
