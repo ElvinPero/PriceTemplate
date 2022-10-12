@@ -17,9 +17,6 @@ html {
 }
 .dark-mode {
     --bg: #1d202d;
-    --bgBlue: #262938;
-    --bgGreen: #182c2a;
-    --bgOrange: #322725;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -150,7 +147,6 @@ nav form input.form-control {
 }
 nav form button.btn {
     border-radius: 20px;
-    background-color: var(--blue);
     color: #fff !important;
     border: none;
     padding: 7px 20px;
@@ -251,7 +247,11 @@ nav button.collapsed .fa-times {
   box-shadow: #000 0 0 10px;
   text-shadow: #fff 0 0 50px;
 }
-
+@media(max-width: 990px) {
+    nav #checkbox {
+        margin-left: -1em;
+    }
+}
 @media(min-width: 900px) {
     nav.navbar {
         padding: 10px 3%;
@@ -386,15 +386,6 @@ darkmode styles
 }
 .dark-mode nav button.navbar-toggler {
     color: #fff;
-}
-.dark-mode .container-bg1 {
-    background-color: var(--bgBlue);
-}
-.dark-mode .container-bg2 {
-    background-color: var(--bgGreen);
-}
-.dark-mode .container-bg3 {
-    background-color: var(--bgOrange);
 }
 .dark-mode .footer-basic {
     background-color: var(--bg);
