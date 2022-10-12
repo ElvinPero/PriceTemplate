@@ -32,11 +32,14 @@ html {
     --blue: #45ADFF;
     --green: #73FFE0;
     --orange: #FF8975;
-    --bg: #28364E;
+    --bg: #1d202d;
     --toggle: #fff;
     --grey: #eee;
     --header: #eee;
     --navbar: #2574ac;
+    --bgBlue: #262938;
+    --bgGreen: #182c2a;
+    --bgOrange: #322725;
 }
 
 
@@ -110,7 +113,7 @@ body {
 }
 
 #checkbox {
-    display: none;
+    display: block;
 }
 
 ol,
@@ -142,7 +145,54 @@ table {
     margin-bottom: 9%;
     background: var(--navbar) !important;
 }
-
+nav.navbar {
+    background-color: #fff;
+    padding: 10px 7%;
+    box-shadow: 0 3px 7px rgba(63, 63, 63, 0.245);
+    font-size: 14px;
+}
+nav .navbar-brand {
+    font-weight: 600;
+}
+nav .navbar-nav {
+    flex: 1;
+    justify-content: center;
+}
+nav .navbar-nav .nav-link {
+    padding: 10px 20px;
+    margin: 0 20px 0 0;
+}
+nav .navbar-nav .nav-link.active,
+nav .navbar-nav .nav-link:hover {
+    color: var(--blue);
+}
+nav form {
+    border: 1px solid rgba(153, 153, 153, 0.242);
+    padding: 2px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+nav form input.form-control {
+    background-color: transparent;
+    border: none;
+    border-radius: 20px;
+}
+nav form button.btn {
+    border-radius: 20px;
+    background-color: var(--blue);
+    color: #fff !important;
+    border: none;
+    padding: 7px 20px;
+}
+nav button.collapsed .fa-bars {
+    display: block;
+}
+nav button .fa-bars {
+    display: none;
+}
+nav button.collapsed .fa-times {
+    display: none;
+}
 
 .container {
     display: flex;
@@ -329,6 +379,9 @@ table {
 }
 
 @media(min-width: 900px) {
+    nav.navbar {
+        padding: 10px 3%;
+    }
     .panel {
         flex-direction: row;
         margin: 0;
@@ -349,6 +402,17 @@ table {
         padding: 0;
     }
 
+}
+button.style {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: var(--blue);
+    color: #fff;
+    padding: 15px 4%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 3px 3px 7px #3a3a3a55;
 }
 
 .footer-basic {
@@ -419,6 +483,12 @@ table {
 
 
 @media (max-width: 768px) {
+    nav.navbar {
+        padding: 10px 3%;
+    }
+    nav .navbar-nav .nav-link {
+        padding-left: 0;
+    }
     .menu {
         display: none;
         position: absolute;
@@ -491,3 +561,26 @@ table {
     background: var(--blue) !important;
 }
 
+
+/*
+darkmode styles
+*/
+.dark-mode nav {
+    background-color: var(--bg);
+    color: #fff;
+}
+.dark-mode nav a {
+    color: var(--grey);
+}
+.dark-mode nav button.navbar-toggler {
+    color: #fff;
+}
+.dark-mode .container-bg1 {
+    background-color: var(--bgBlue);
+}
+.dark-mode .container-bg2 {
+    background-color: var(--bgGreen);
+}
+.dark-mode .container-bg3 {
+    background-color: var(--bgOrange);
+}

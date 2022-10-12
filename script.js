@@ -23,7 +23,7 @@ $(document).ready(function() {
   hidePreloader();
 });
 
-let darkMode = localStorage.getItem("dark-mode");
+let mode = localStorage.getItem("dark-mode");
 
 const enableDarkMode = () => {
   $("h2").css({ color: "black" });
@@ -43,13 +43,13 @@ const disableDarkMode = () => {
   localStorage.setItem("dark-mode", "disabled");
 };
 
-if (darkMode === "enabled") {
+if (mode === "enabled") {
   enableDarkMode(); // set state of darkMode on page load
 }
 
 $(".mode").click(function () {
-  darkMode = localStorage.getItem("dark-mode") || 'disabled'; // update darkMode when clicked
-  if (darkMode === "disabled") {
+  mode = localStorage.getItem("dark-mode") || 'disabled'; // update darkMode when clicked
+  if (mode === "disabled") {
     enableDarkMode();
   } else {
     disableDarkMode();

@@ -7,9 +7,11 @@
   <title>Price Tiers</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
 
+
   <link href="css/loader.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
@@ -24,21 +26,21 @@
 
 <!-- Navbar  Starts here-->
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg sticky-top navbar-light">
   <div class="container-fluid">
+    <a class="navbar-brand col-lg-3" href="#"><img src="./assets/logo.png" height="17px"/></a>
     <button
-      class="navbar-toggler"
+      class="navbar-toggler collapsed"
       type="button"
-      data-mdb-toggle="collapse"
-      data-mdb-target="#navbarTogglerDemo01"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarTogglerDemo01"
       aria-controls="navbarTogglerDemo01"
-      aria-expanded="false"
       aria-label="Toggle navigation"
     >
       <i class="fas fa-bars"></i>
+      <i class="fas fa-times"></i>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <a class="navbar-brand" href="#">Price Template</a>
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="">Home</a>
@@ -61,10 +63,17 @@
 
       <!-- Dark Mode -->
 
-      <button class="mode">
-        <img class="toggler" src="assets/moon-and-stars-svgrepo-com.svg" alt="Toggle Mode" />
-      </button>
-      <form class="d-flex input-group w-auto">
+      <div class="mode form-check form-switch me-2">
+        <input 
+          class="form-check-input py-2 px-3" 
+          type="checkbox" 
+          id="checkbox" 
+          name="darkmode" 
+          data-bs-toggle="tooltip" 
+          title="Toggle Dark Mode"
+        />
+      </div>
+      <form class="d-flex">
         <input
           type="search"
           class="form-control"
@@ -72,7 +81,7 @@
           aria-label="Search"
         />
         <button
-          class="btn btn-outline-primary"
+          class="btn"
           type="button"
           data-mdb-ripple-color="dark"
         >
@@ -221,6 +230,8 @@
 
     </div>
   </div>
+
+ <button class="style is-featured styleBtn" id="style" onclick="changeStyle()">Change Style</button>
   <!-- /.container -->
 
   <div class="footer-basic">
@@ -296,22 +307,28 @@
   </script> -->
   <script>
     const checkbox = document.getElementById('checkbox');
+    let darkmode = localStorage.getItem("dark-mode");
+
     checkbox.addEventListener('click', checkMode);
     function darkMode() {
       document.body.classList.add('dark-mode');
     }
     function lightMode() {
       document.body.classList.remove('dark-mode');
-
-
     }
     function checkMode() {
       if (checkbox.checked) {
         darkMode()
+        localStorage.setItem("dark-mode", "enabled")
       }
       else {
         lightMode()
+        localStorage.setItem("dark-mode", "disabled")
       }
+    }
+    if(darkmode === "enabled") {
+      document.body.classList.add("dark-mode");
+      checkbox.setAttribute("checked", "true")
     }
   </script>
 

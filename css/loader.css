@@ -14,7 +14,11 @@
     box-sizing: border-box;
     font-size: 10vmin;
     color: #fafad2;
+    background-color: #ffff;
     text-shadow: 0.5vmin 0.5vmin 0 #000;
+    position: fixed;
+    top: 0;
+    left: 0;
   }
   .loader:before {
     content: "loading";
@@ -35,7 +39,9 @@
     animation: 6s infinite loader;
     position: absolute;
   }
-  
+  .dark-mode .loader {
+    background-color: #141623;
+  }
   @keyframes loader {
     0% {
       box-shadow: var(--pos-1) var(--pos-c) var(--color),
