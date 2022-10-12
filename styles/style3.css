@@ -26,13 +26,23 @@ html[data-theme='dark'] {
   --pricing-button-hover-txt: white;
 }
 
-
-
+.dark-mode {
+  --container-bg: #312532;
+  --pricing-plan: #1d202d;
+  --pricing-header-h2: white;
+}
 
 body {
   background-color: var(--container-bg);
 }
 
+nav .navbar-nav .nav-link.active,
+nav .navbar-nav .nav-link:hover {
+  color:#8f79fd;
+}
+.form-switch .form-check-input:checked {
+  background-color: #8f79fd;
+}
 .container-bg {
   background-color: var(--container-bg);
 }

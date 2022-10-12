@@ -396,6 +396,10 @@ darkmode styles
 .dark-mode .container-bg3 {
     background-color: var(--bgOrange);
 }
+.dark-mode .footer-basic {
+    background-color: var(--bg);
+    color: #fff;
+}
 .toggler {
   max-height: 46px;
 }

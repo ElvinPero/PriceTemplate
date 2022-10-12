@@ -1,17 +1,24 @@
-var checkbox = document.querySelector('input[name=theme]');
+const checkbox = document.getElementById('checkbox');
+let darkmode = localStorage.getItem("dark-mode");
 
-let trans = () => {
-    document.documentElement.classList.add('transition');
-    window.setTimeout(() => {
-        document.documentElement.classList.remove('transition')
-    }, 500)
+checkbox.addEventListener('click', checkMode);
+function darkMode() {
+  document.body.classList.add('dark-mode');
 }
-checkbox.addEventListener('change', function() {
-    if(this.checked) {
-        trans()
-        document.documentElement.setAttribute('data-theme', 'dark')
-    } else {
-        trans()
-        document.documentElement.setAttribute('data-theme', 'light')
-    }
-})
+function lightMode() {
+  document.body.classList.remove('dark-mode');
+}
+function checkMode() {
+  if (checkbox.checked) {
+    darkMode()
+    localStorage.setItem("dark-mode", "enabled")
+  }
+  else {
+    lightMode()
+    localStorage.setItem("dark-mode", "disabled")
+  }
+}
+if(darkmode === "enabled") {
+  document.body.classList.add("dark-mode");
+  checkbox.setAttribute("checked", "true")
+}

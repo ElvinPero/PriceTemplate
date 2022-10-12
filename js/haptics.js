@@ -1,4 +1,4 @@
-const hamIcon  = document.querySelector(`.hamburger-icon`);
+const hamIcon  = document.querySelector(`#checkbox`);
 const styleBtn  = document.querySelector(`.styleBtn`);
 const toggleLabel  = document.querySelector(`.toggleLabel`);
 

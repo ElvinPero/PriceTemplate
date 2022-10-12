@@ -30,10 +30,23 @@ html[data-theme='dark'] {
   --style-btn: #e94560;
 }
 
+.dark-mode {
+  --container-bg: #322725;
+  --pricing-plan: #1d202d;
+  --pricing-header-h2: white;
+}
+
 body {
   background-color: var(--container-bg);
 }
 
+nav .navbar-nav .nav-link.active,
+nav .navbar-nav .nav-link:hover {
+  color: var(--style-btn)
+}
+.form-switch .form-check-input:checked {
+  background-color: var(--style-btn);
+}
 .container-bg {
   background-color: var(--container-bg);
 }
