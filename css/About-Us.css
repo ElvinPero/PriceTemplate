@@ -1,0 +1,58 @@
+.About-Us{
+  background-color: #2C3333;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+}
+h1{
+  margin-bottom: 1.5rem;
+}
+
+.row{
+  padding-top: 1.5rem;
+}
+.col{
+  align-content: center;
+}
+.description{
+  /* text-align: left;*/
+  margin-top: 1.5rem;
+}
+.styleBtn{
+  z-index: 3;
+}
+
+.About-Us-image{
+  height: 300px;
+  width: 500px;
+  border-radius: 5%;
+  z-index: 2;
+  position: absolute;
+  left: 3rem;
+
+}
+.square{
+  background-color: #24a0ed;
+  height: 300px;
+  width: 500px;
+  border-radius: 5%;
+  z-index: 1;
+
+  /* position: absolute; */
+  margin-left:4rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+.btn{
+  margin-top: 3rem;
+}
+.btn-outline-dark{
+  margin-left: 1.5rem;
+  color: #fff;
+}
+.github-link{
+  color: #2C3333 ;
+}
+.discord-link{
+
+}
