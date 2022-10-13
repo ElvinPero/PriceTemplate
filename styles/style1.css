@@ -113,3 +113,6 @@ nav .navbar-nav .nav-link:hover {
 .dark-mode .container-bg {
   background-color: var(--container-bg);
 }
+.copyright{
+  color: #016ff9;
+}

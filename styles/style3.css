@@ -102,3 +102,6 @@ nav .navbar-nav .nav-link:hover {
   transition: all 0.3s;
 }
 
+.copyright{
+  color: #583edb;
+}
