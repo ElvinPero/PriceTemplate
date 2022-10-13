@@ -50,9 +50,11 @@ git push origin branch-name
 
 ### NOTE
 
+- If you are looking to contribute Make sure to read the <a href="https://github.com/ElvinPero/PriceTemplate/blob/main/CONTRIBUTING.md">Contribute.md</a>  file before contributing to know the rule of contributing.
 - Make sure you commit your changes in a new branch.
 - Make sure you give a proper name to your files describing the addition.
 - Also make sure you comment your code wherever necessary.
+
 
 ## Authors
 
