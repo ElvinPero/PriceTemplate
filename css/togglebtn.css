@@ -1,4 +1,4 @@
-html {
+html{
   --bg-panel: #ebebeb;
   --toggle-btn: #231f20;
   --footer:white;
@@ -12,6 +12,11 @@ html[data-theme='dark'] {
   --footer-txt:white;
 
 }
+
+.button{
+  margin-left: 100%;
+}
+
 .toggle-container{
     display: flex;
     justify-content:end;
@@ -94,5 +99,3 @@ input:checked + label .sun {
 input:checked + label .moon {
   color: #ffdf00;
 }
-
-
