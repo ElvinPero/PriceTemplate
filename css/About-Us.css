@@ -9,14 +9,14 @@
 html[data-theme='dark'] {
   /* .About-Us{ */
     --color: white;
-    --bg: #2C3333;
+    --bg: #262938;
   /* } */
 }
 .dark-mode {
   /* --container-bg: #262938;
   --pricing-plan: #1d202d; */
   --color: white;
-  --bg: #2C3333;
+  --bg: #262938;
 }
 h1{
   margin-bottom: 1.5rem;
@@ -57,7 +57,7 @@ h1{
   margin-top: 2rem;
   margin-bottom: 1.5rem;
 }
-.btn{
+.repo-link{
   margin-top: 3rem;
   /* background-color:#3681dc;
   background-color: var(--bg); */
