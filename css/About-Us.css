@@ -1,8 +1,22 @@
 .About-Us{
-  background-color: #2C3333;
-  color: #fff;
+  background-color: #CFD2CF; /*2C3333*/
+  color: black;
   text-align: center;
   padding: 1.5rem;
+  color: var(--color);
+  background-color: var(--bg);
+}
+html[data-theme='dark'] {
+  /* .About-Us{ */
+    --color: white;
+    --bg: #2C3333;
+  /* } */
+}
+.dark-mode {
+  /* --container-bg: #262938;
+  --pricing-plan: #1d202d; */
+  --color: white;
+  --bg: #2C3333;
 }
 h1{
   margin-bottom: 1.5rem;
@@ -45,14 +59,13 @@ h1{
 }
 .btn{
   margin-top: 3rem;
+  /* background-color:#3681dc;
+  background-color: var(--bg); */
 }
 .btn-outline-dark{
   margin-left: 1.5rem;
   color: #fff;
 }
 .github-link{
-  color: #2C3333 ;
-}
-.discord-link{
-
+  color: white ;
 }
