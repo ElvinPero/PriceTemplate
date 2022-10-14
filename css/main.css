@@ -47,6 +47,13 @@ body {
     outline: 1px solid black;
 
 }
+/* .navi:hover{
+    background-color: #9dd1ff67;
+} */
+
+.mod:hover{
+    cursor: pointer;
+}
 
 .label {
     width: 5em;
@@ -344,7 +351,7 @@ nav button.collapsed .fa-times {
     margin-top:15px;
     text-align:center;
     font-size:13px;
-    color:#aaa;
+    /* color: var(--toggle-btn); */
     margin-bottom:0;
   }
 
