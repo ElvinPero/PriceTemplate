@@ -1,0 +1,33 @@
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f80f6;
+    transition: opacity 0.75s, visbility 0.75s;
+    z-index: 99999;
+}
+
+.preloader--hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.preloader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border-radius: 70%;
+    border-right: 0.3rem solid white;
+    animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+    from { transform: rotate(0turn);}
+    to { transform: rotate(1turn);}
+
+}
