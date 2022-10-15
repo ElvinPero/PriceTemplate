@@ -46,7 +46,7 @@ h1{
 
 }
 .square{
-  background-color: #24a0ed;
+  /* background-color: #24a0ed; */
   height: 300px;
   width: 500px;
   border-radius: 5%;
@@ -68,4 +68,15 @@ h1{
 }
 .github-link{
   color: white ;
+}
+
+.repo-link {
+  border: none;
+  border-width: 1px;
+  height: 36px;
+  width: 200px;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 10;
+  transition: background 1s, color 1s;
 }

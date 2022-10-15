@@ -113,6 +113,17 @@ nav .navbar-nav .nav-link:hover {
 .dark-mode .container-bg {
   background-color: var(--container-bg);
 }
+.square {
+  background-color:#3f92f9
+}
+.btn-primary{
+  background-color: white;
+  color:#3f92f9
+}
+.btn-primary:hover{
+  color: white;
+  background-color: #3f92f9;
+}
 .copyright{
   color: #016ff9;
 }
