@@ -12,6 +12,12 @@ html[data-theme='dark'] {
   --footer-txt:white;
 
 }
+
+.button{
+  margin-left: 95%;
+}
+
+
 .toggle-container{
     display: flex;
     justify-content:end;
