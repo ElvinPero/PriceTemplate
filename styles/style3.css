@@ -115,3 +115,7 @@ nav .navbar-nav .nav-link:hover {
 .copyright{
   color: #583edb;
 }
+
+.btn-to-top {
+  background-color: #8f79fd;
+}
