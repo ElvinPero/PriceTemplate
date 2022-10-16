@@ -2,7 +2,7 @@
     background-color: aqua;
 }
 .heading{
-    margin-top: 50px;
+    margin-top: 20px;
     color: white;
 }
 
@@ -28,3 +28,18 @@ html {
     font-family: 'roboto', sans-serif;
     scroll-behavior: smooth;
 }
+
+.btn{
+    background-color: #CFD2CF;
+    border: solid;
+    border-color: black;
+    border-radius: 30px;
+    width: 300px;
+    color: black;
+  }
+  
+  .btn:hover{
+    background-color: #0d6efd;
+    border: solid;
+    border-color: black;
+  }

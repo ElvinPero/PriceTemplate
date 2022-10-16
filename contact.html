@@ -39,23 +39,35 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
 
-    <title>Hello, world!</title>
+    <title>Contact Us</title>
   </head>
   <body>
 
     <!-- Navbar Starts here -->
-
+<!-- 
     <body onload="initHaptics()">
       <div class="preloader">
         <div class="ring"></div>
         <span>loading...</span>
-      </div>
-        <div class="toggle-container">
+      </div> -->
+        <!-- <div class="toggle-container">
         <input id="switch" type="checkbox" name="theme" />
         <label class="toggleLabel" for="switch">
           <i class="bi bi-brightness-high-fill sun"></i>
           <i class="bi bi-moon-fill moon"></i>
         </label>
+      </div> -->
+    
+     
+      <div class="button mode form-check form-switch me-2">
+        <input
+          class="form-check-input py-2 px-3"
+          type="checkbox"
+          id="checkbox"
+          name="darkmode"
+          data-bs-toggle="tooltip"
+          title="Toggle Dark Mode"
+        />
       </div>
     
         <section class="hamburger-menu">
@@ -68,7 +80,7 @@
     
           <nav class="ham-nav" id="ham-nav">
             <ul class="ham-nav-ul display-min">
-              <a href="index.html" onclick="closeSlideMenu()">Home</a>
+              <a href="index.html" onclick="https://elvinpero.github.io/PriceTemplate/">Home</a>
               <br />
               <a href="index.html" onclick="closeSlideMenu()">Prices</a
               ><br />
@@ -88,13 +100,13 @@
 
 
         <div class="container heading">
-            <h1 class="text-center font-weight-bold text-capitalize">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Cras egestas magna at.</h1>
+            <!-- <h1 class="text-center font-weight-bold text-capitalize">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Cras egestas magna at.</h1> -->
+
+              <h1 class="text-center font-weight-bold text-capitalize animate__fadeInDownBig animate__slow">Contact Us</h1>
             
             <p class="text-center font-weight-normal mt-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel volutpat arcu. Nam eleifend in purus ut
-              feugiat. Quisque efficitur rhoncus malesuada. Donec interdum ultricies lobortis. Proin finibus sem in suscipit
-              pulvinar. Sed viverra a mi sed aliquet. Curabitur non urna eu risus egestas euismod.
+              For any queries regarding templates ,contact us!
             </p>
         </div>
 
@@ -102,9 +114,14 @@
         <!-- form  -->
 
 
+        <!-- <div class="container mt-5">
+      
+            <div class="container p-4 rounded-lg formbg"> -->
+
+              
         <div class="container mt-5">
       
-            <div class="container p-4 rounded-lg formbg">
+          <div class="container p-4 rounded-lg formbg col-5">
       
               <div class="row g-2">
                 <!-- First Name -->
@@ -118,7 +135,7 @@
                 <!-- Last Name -->
                 <div class="col-md">
                   <div class="form-floating">
-                    <input type="email" class="form-control" id="floatingInputGrid" placeholder="Doe" value="">
+                    <input type="text" class="form-control" id="floatingInputGrid" placeholder="Doe" value="">
                     <label for="floatingSelectGrid">Last Name</label>
                   </div>
                 </div>
@@ -139,8 +156,8 @@
               </div>
       
       
-              <div class="form-floating mt-4">
-                <button type="submit" class="btn btn-dark">Submit</button>
+              <div class="text-center form-floating mt-4">
+                <button type="submit" class="btn btn-dark btn-lg">Submit</button>
               </div>
     
             </div>
