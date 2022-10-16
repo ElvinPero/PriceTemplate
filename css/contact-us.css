@@ -12,7 +12,8 @@
 
 .formbg{
     background-color: #f7f7f7d0;
-    border-radius: 10px
+    border-radius: 10px;
+    margin-bottom:3rem;
 }
 
 html {

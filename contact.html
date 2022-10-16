@@ -40,6 +40,15 @@
     />
 
     <title>Hello, world!</title>
+    <style>
+      .dark-mode {
+        background-color: #262938;;
+        color: white;
+      }
+      .form-floating>label{
+        color: black;
+      }
+    </style>
   </head>
   <body>
 
@@ -51,12 +60,13 @@
         <span>loading...</span>
       </div>
         <div class="toggle-container">
-        <input id="switch" type="checkbox" name="theme" />
+        <input id="switch" type="checkbox" name="theme" onclick="myFunction()" />
         <label class="toggleLabel" for="switch">
           <i class="bi bi-brightness-high-fill sun"></i>
           <i class="bi bi-moon-fill moon"></i>
         </label>
-      </div>
+      </div> 
+      <!-- <button onclick="myFunction()">Toggle dark mode</button> -->
     
         <section class="hamburger-menu">
           <div class="hamburger-icon" id="iconid">
@@ -88,13 +98,12 @@
 
 
         <div class="container heading">
-            <h1 class="text-center font-weight-bold text-capitalize">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Cras egestas magna at.</h1>
+            <h1 class="text-center font-weight-bold text-capitalize">Contact Us</h1>
             
             <p class="text-center font-weight-normal mt-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel volutpat arcu. Nam eleifend in purus ut
-              feugiat. Quisque efficitur rhoncus malesuada. Donec interdum ultricies lobortis. Proin finibus sem in suscipit
-              pulvinar. Sed viverra a mi sed aliquet. Curabitur non urna eu risus egestas euismod.
+              Single workspace for big to small sized Companies or Teams.
+              Go and Hack Yourself
+              If you’re a business owner or managing services for others, these beautifully designed price list templates are perfect for a new look and professional feel. The layouts are easy to edit with your services, product, and pricing information.              
             </p>
         </div>
 
@@ -156,11 +165,19 @@
 
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script>
+      function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
-    ></script>
+    >
+
+  </script>
     <script src="./js/preloader.js"></script>
   </body>
 </html>
