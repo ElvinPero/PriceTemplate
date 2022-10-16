@@ -4,12 +4,12 @@ html {
   --color-headings: black;
   --color-text: black;
   --toggle-btn: #231f20;
-  --container-bg: #554994;
-  --borders-overall: #0d1b27;
+  --container-bg: #409db4;
+  --borders-overall: #2f2f2f;
   --pricing-plan: #ffffff;
   --pricing-header-h2: #333333;
-  --pricing-button: #d1caf6;
-  --pricing-button-hover-txt: black;
+  --pricing-button: #61b5dc;
+  --pricing-button-hover-txt: rgb(255, 255, 255);
 }
 
 html[data-theme='dark'] {
@@ -18,8 +18,8 @@ html[data-theme='dark'] {
   --color-headings: white;
   --color-text: white;
   --toggle-btn: #b5b5b5;
-  --container-bg: #413a63;
-  --borders-overall: #e1f1ff;
+  --container-bg: #349bad;
+  --borders-overall: #ffffff;
   --pricing-plan: #333333;
   --pricing-header-h2: white;
   --pricing-button: #635f5f;
@@ -27,7 +27,7 @@ html[data-theme='dark'] {
 }
 
 .dark-mode {
-  --container-bg: #312532;
+  --container-bg: #24495b;
   --pricing-plan: #1d202d;
   --pricing-header-h2: white;
 }
@@ -37,24 +37,24 @@ body {
 }
 
 nav .btn {
-  background-color: #8f79fd;
+  background-color: #4792b5;
 }
 nav .navbar-nav .nav-link.active,
 nav .navbar-nav .nav-link:hover {
-  color:#8f79fd;
+  color:#4b8ba9;
 }
 .form-switch .form-check-input:checked {
-  background-color: #8f79fd;
+  background-color: #377e9f;
 }
 .container-bg {
   background-color: var(--container-bg);
 }
 
 .style {
-  background-color: #8f79fd;
+  background-color: #377e9f;
 }
 .pricing-price {
-  color: #8f79fd;
+  color: #2a647f;
 }
 .pricing-header{
   color:var(--pricing-header-h2);
@@ -66,7 +66,7 @@ nav .navbar-nav .nav-link:hover {
 .pricing-features-item {
   border-top: 2px solid var(--borders-overall);
   font-size: 0.8em;
-  color: #8f79fd;
+  color: #377e9f;
 }
 .pricing-features-item:last-child {
   border-bottom: 2px solid var(--borders-overall);
@@ -77,9 +77,9 @@ nav .navbar-nav .nav-link:hover {
 
 
 .pricing-button{
-  border: 2px solid #8f79fd;
+  border: 2px solid #377e9f;
   background-color: var(--pricing-button);
-  color: #8f79fd;
+  color: #000000;
   transition: all 0.3s;
 }
 .pricing-button:hover,
@@ -89,29 +89,29 @@ nav .navbar-nav .nav-link:hover {
   transition: all 0.3s;
 }
 .pricing-button.is-featured {
-  background-color: #554994;
+  background-color: #377e9f;
   color: white;
   transition: all 0.3s;
-  border-color: #554994;
+  border-color: #377e9f;
 
 }
 .pricing-button.is-featured:hover {
-  background-color: #583edb;
+  background-color: #174e67;
   color: white;
-  border-color: #583edb;
+  border-color: #174e67;
   transition: all 0.3s;
 }
 .square {
-  background-color:#554994
+  background-color:#377e9f;
 }
 .btn-primary{
   background-color: white;
-  color:#554994
+  color:#377e9f;
 }
 .btn-primary:hover{
   color:white;
-  background-color: #554994;
+  background-color: #377e9f;
 }
 .copyright{
-  color: #583edb;
+  color: #05212e;
 }
