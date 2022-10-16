@@ -23,6 +23,7 @@
     <link href="./css/contact-us.css" rel="stylesheet" />
     <link href="./css/togglebtn.css" rel="stylesheet" />
     <link href="./css/hamburger.css" rel="stylesheet" />
+    <link href="./css/preloader.css" rel="stylesheet" />
 
     <!-- scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -45,6 +46,10 @@
     <!-- Navbar Starts here -->
 
     <body onload="initHaptics()">
+      <div class="preloader">
+        <div class="ring"></div>
+        <span>loading...</span>
+      </div>
         <div class="toggle-container">
         <input id="switch" type="checkbox" name="theme" />
         <label class="toggleLabel" for="switch">
@@ -156,6 +161,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-
+    <script src="./js/preloader.js"></script>
   </body>
 </html>
