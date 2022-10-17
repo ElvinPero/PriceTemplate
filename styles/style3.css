@@ -4,11 +4,11 @@ html {
   --color-headings: black;
   --color-text: black;
   --toggle-btn: #231f20;
-  --container-bg: #409db4;
+  --container-bg: #33FF8A;
   --borders-overall: #2f2f2f;
   --pricing-plan: #ffffff;
   --pricing-header-h2: #333333;
-  --pricing-button: #61b5dc;
+  --pricing-button: #33FF8A;
   --pricing-button-hover-txt: rgb(255, 255, 255);
 }
 
@@ -18,7 +18,7 @@ html[data-theme='dark'] {
   --color-headings: white;
   --color-text: white;
   --toggle-btn: #b5b5b5;
-  --container-bg: #349bad;
+  --container-bg: #33FF8A;
   --borders-overall: #ffffff;
   --pricing-plan: #333333;
   --pricing-header-h2: white;
@@ -37,24 +37,24 @@ body {
 }
 
 nav .btn {
-  background-color: #4792b5;
+  background-color: #37a868;
 }
 nav .navbar-nav .nav-link.active,
 nav .navbar-nav .nav-link:hover {
-  color:#4b8ba9;
+  color:#37a868;
 }
 .form-switch .form-check-input:checked {
-  background-color: #377e9f;
+  background-color: #33FF8A;
 }
 .container-bg {
   background-color: var(--container-bg);
 }
 
 .style {
-  background-color: #377e9f;
+  background-color: #37a868;
 }
 .pricing-price {
-  color: #2a647f;
+  color: #33FF8A;
 }
 .pricing-header{
   color:var(--pricing-header-h2);
@@ -66,7 +66,7 @@ nav .navbar-nav .nav-link:hover {
 .pricing-features-item {
   border-top: 2px solid var(--borders-overall);
   font-size: 0.8em;
-  color: #377e9f;
+  color: #3d9a65;
 }
 .pricing-features-item:last-child {
   border-bottom: 2px solid var(--borders-overall);
@@ -77,7 +77,7 @@ nav .navbar-nav .nav-link:hover {
 
 
 .pricing-button{
-  border: 2px solid #377e9f;
+  border: 2px solid #33FF8A;
   background-color: var(--pricing-button);
   color: #000000;
   transition: all 0.3s;
@@ -89,29 +89,32 @@ nav .navbar-nav .nav-link:hover {
   transition: all 0.3s;
 }
 .pricing-button.is-featured {
-  background-color: #377e9f;
+  background-color: #39be73;
   color: white;
   transition: all 0.3s;
-  border-color: #377e9f;
+  border-color: #33FF8A;
 
 }
 .pricing-button.is-featured:hover {
-  background-color: #174e67;
+  background-color: #33FF8A;
   color: white;
-  border-color: #174e67;
+  border-color: #33FF8A;
   transition: all 0.3s;
 }
 .square {
-  background-color:#377e9f;
+  background-color:#33FF8A;
 }
 .btn-primary{
   background-color: white;
-  color:#377e9f;
+  color:#278e54;
 }
 .btn-primary:hover{
   color:white;
-  background-color: #377e9f;
+  background-color: #276341;
 }
 .copyright{
   color: #05212e;
+}
+.btn-to-top{
+  background-color: #33FF8A!important;
 }
