@@ -5,7 +5,7 @@ html {
   --color-text: black;
   --toggle-btn: #231f20;
   --container-bg: #3f92f9;
-  --borders-overall: #0d1b27;
+  --borders-overall:  #2f2f2f;
   --pricing-plan: #fff;
   --pricing-header-h2: #333333;
   --pricing-button: #9dd1ff;
@@ -42,7 +42,8 @@ nav .btn {
 }
 nav .navbar-nav .nav-link.active,
 nav .navbar-nav .nav-link:hover {
-  color: var(--style-btn)
+  color: var(--style-btn);
+  cursor:pointer;
 }
 .form-switch .form-check-input:checked {
   background-color: var(--style-btn);
@@ -53,7 +54,7 @@ nav .navbar-nav .nav-link:hover {
 
 .style {
   background-color: var(--style-btn);
-  color: whitesmoke
+  color: whitesmoke;
 }
 
 .pricing-price{
@@ -114,7 +115,7 @@ nav .navbar-nav .nav-link:hover {
   background-color: var(--container-bg);
 }
 .square {
-  background-color:#3f92f9
+  background-color:#3f92f9;
 }
 .btn-primary{
   background-color: white;

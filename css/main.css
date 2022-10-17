@@ -96,6 +96,7 @@ body {
 
 #checkbox {
     display: block;
+    cursor: pointer;
 }
 
 ol, ul {
@@ -364,18 +365,18 @@ nav button.collapsed .fa-times {
   height: 50px;
   background: var(--container-bg);
   border-radius:10px;
-  bottom: 40px;
+  bottom: 30px;
   right: 30px;
   text-decoration: none;
   text-align: center;
-  line-height: 60px;
+  line-height: 40px;
   color: white;
   font-size: 30px;
   z-index: 10000;
 }
 
 .btn-to-top span {
-    bottom: 5px;
+    bottom: 75px;
     position: relative;
 }
 
