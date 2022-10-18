@@ -206,14 +206,14 @@ This section guides you through submitting an enhancement suggestion for Simple 
 #### Before Submitting an Enhancement
 
 - Make sure that you are using the latest version.
-- Read the [documentation](https://github.com/samipak458/Simple-Library-Managment/blob/main/readme.md) carefully and find out if the functionality is already covered, maybe by an individual configuration.
-- Perform a [search](https://github.com/samipak458/Simple-Library-Managment/issues) to see if the enhancement has already been suggested. If it has, add a comment to the existing issue instead of opening a new one.
+- Read the [documentation](https://github.com/ElvinPero/PriceTemplate/blob/main/README.md) carefully and find out if the functionality is already covered, maybe by an individual configuration.
+- Perform a [search](https://github.com/ElvinPero/PriceTemplate/issues) to see if the enhancement has already been suggested. If it has, add a comment to the existing issue instead of opening a new one.
 - Find out whether your idea fits with the scope and aims of the project. It's up to you to make a strong case to convince the project's developers of the merits of this feature. Keep in mind that we want features that will be useful to the majority of our users and not just a small subset. If you're just targeting a minority of users, consider writing an add-on/plugin library.
 
 <!-- omit in toc -->
 #### How Do I Submit a Good Enhancement Suggestion?
 
-Enhancement suggestions are tracked as [GitHub issues](https://github.com/samipak458/Simple-Library-Managment/issues).
+Enhancement suggestions are tracked as [GitHub issues](https://github.com/ElvinPero/PriceTemplate/issues).
 
 - Use a **clear and descriptive title** for the issue to identify the suggestion.
 - Provide a **step-by-step description of the suggested enhancement** in as many details as possible.
